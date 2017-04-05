@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>申请店铺</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<link rel="stylesheet" href="./css/base.css">
+
+		 
+	
+	</head>
+
+	<body>
+
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left colwhite fz24"></a>
+			<h1 class="mui-title colwhite">申请店铺</h1>
+		</header>	
+
+		<div class="   apply ">
+			<div class="procedure">
+				<div class="rhythm">
+					<p class="col1e9854"> <em  class="bor1e9854">1</em>填写治疗 </p>
+					<span class="btda1e" ></span>
+					<p> <em>2</em>康采审核 </p>
+					<span></span>
+					<p> <em>3</em>审核通过 </p>
+					<div class="clear"></div>
+				</div>
+				<p class="explain">请填写基本资料，资料审核通过，可以进行进驻与分销</p>
+			</div>
+
+			<div class="mui-content">
+				<div class="mui-content-padded" style=" ">
+					 
+					<form class="mui-input-group">
+		
+
+						<div class="mui-input-row">
+							<label>公司名称</label>
+							<input type="text" class="mui-input-clear" placeholder="公司名称" name="kw" value="asd">
+						</div>
+
+
+				 
+
+						<div class="mui-input-row">
+							<label>公司地址</label>
+							<input type="text" class="mui-input-clear" placeholder="公司地址">
+						</div>
+
+						<div class="mui-input-row">
+							<label>联系电话</label>
+							<input type="text" class="mui-input-clear" placeholder="联系电话">
+						</div>
+
+						<div class="updatephoto">
+							<input hidden="" type="file" id="qrcode1" name="qrcode" onchange="previewImage(this,'1')">
+							<div id="preview1" class="update" haveimg="1"><img id="Display_qr1" onclick="click_file('1')" src="./img/index/zx.png" width="100" height="40"></div>
+							<input hidden="" type="file" id="qrcode2" name="qrcode" onchange="previewImage(this,'2')">
+							<div id="preview2" class="update" haveimg="1"><img id="Display_qr2" onclick="click_file('2')" src="" width="100" height="40"></div>
+							<input hidden="" type="file" id="qrcode3" name="qrcode" onchange="previewImage(this,'3')">
+							<div id="preview3" class="update" haveimg="1"><img id="Display_qr3" onclick="click_file('3')" src="" width="100" height="40"></div>
+
+						</div>
+
+						<div class="prompt">上传证件，以便快速审核通过</div>
+ 
+
+						<button type="button" class="mui-btn mui-btn-primary mui-btn-block save">申请</button>
+						 
+					</form>
+					 
+				</div>
+			</div>
+ 
+			 
+			
+		</div>		
+
+		 
+
+		<script src="./js/mui.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		$(function(){
+			function previewImage(file,inp){
+
+        	var fileName = file.value;
+        	var type = fileName.substring( fileName.lastIndexOf(".") + 1).toUpperCase();   // 获取后缀名并转大写
+        	//if( type != "BMP" && type != "PNG" && type != "GIF" && type != "JPG" && type != "JPEG" ){ 
+        	//	Dtoast('请上传图片格式');
+        	//	$('#'+prev).attr('haveimg','0');
+        	//	return false;
+        	//	}else if( file.files[0].size > 3145728 ){ 
+        	//	Dtoast('图片大于3MB');
+        	//	$('#'+prev).attr('haveimg','0');
+        	//	return false;
+        	//}
+        	//$('#'+prev).attr('haveimg','1');
+        	var MAXWIDTH  = 100; //  设置最大宽高
+        	var MAXHEIGHT = 100;
+        	var div = document.getElementById('preview'+inp); //获取 div
+
+        	if (file.files && file.files[0])//  有文件
+        	{
+           		div.innerHTML ='<img id=Display_qr'+inp+' onclick=click_file('+inp+')>';//改变 div内容
+           		var img = document.getElementById('Display_qr'+inp); //  获取 img
+           		img.onload = function(){//  当 img标签  图片加载后
+           		var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);  // 返回宽高
+           		img.width  =  rect.width;
+           		img.height =  rect.height;//  改变img标签 宽高 / 边距
+		//  img.style.marginLeft = rect.left+'px';
+        //  img.style.marginTop = rect.top+'px';
+            }
+              	var reader = new FileReader();
+              	reader.onload = function(evt){img.src = evt.target.result;}
+              	reader.readAsDataURL(file.files[0]);
+        }
+        
+        }
+        // function clacImgZoomParam( maxWidth, maxHeight, width, height ){  // 设定宽高、上传图片的宽高
+        //     var param = {top:0, left:0, width:width, height:height};
+        //     if( width>maxWidth || height>maxHeight )
+        //     {
+        //         rateWidth = width / maxWidth;
+        //         rateHeight = height / maxHeight;// 计算宽高比率      
+        //         if( rateWidth > rateHeight )
+        //         {
+        //             param.width =  maxWidth;// 如果 宽大于高，取最大宽度
+        //             param.height = Math.round(height / rateWidth);// 高按比例取值四舍五入整数
+        //         }else
+        //         {
+        //             param.width = Math.round(width / rateHeight);   // 高更长时
+        //             param.height = maxHeight;
+        //         }
+        //     }     
+        //     param.left = Math.round((maxWidth - param.width) / 2);
+        //     param.top = Math.round((maxHeight - param.height) / 2);
+        //     return param;
+        // }
+        function click_file(inp){ 
+
+			$('#qrcode'+inp).click();
+		}
+
+
+			
+		})
+		
+		
+
+
+
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+					//alert($("input[name='kw']").val())
+					$("input[name='kw']").on("focus",function(){
+						$("input[name='kw']").css("display","none");
+					})
+
+						//$("input[name='kw']").focus(function({
+
+
+
+				})
+
+
+
+		</script>
+
+	 
+
+	</body>
+
+</html>

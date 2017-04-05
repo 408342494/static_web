@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" href="https://static.resource.youyu.weijuju.com//css/page/nianhui/screen/common.css?v=20170119170305">
+	<link rel="stylesheet" href="https://static.resource.youyu.weijuju.com//css/page/nianhui/screen/index.css?v=20170119170305">
+
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+ 
+
+<style type="text/css">
+@media screen and (min-width: 1500px) {
+.leftqrcode{
+	display:block;
+	position:absolute;
+	width:200px;
+	height:200px;
+	top:50%;
+	left:50px;
+	margin-top:-100px;
+	background: url('https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/qrcode_border.png')  no-repeat;
+	background-size:100%;
+}
+.leftqrcode img,.rightqrcode img{
+	width:186px;
+	height:186px;
+	margin:7px;
+}
+.rightqrcode{
+	display:block;
+	position:absolute;
+	width:200px;
+	height:200px;
+	top:50%;
+	right:50px;
+	margin-top:-100px;
+	background: url('https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/qrcode_border.png')  no-repeat;
+	background-size:100%;
+}
+}
+@media screen and (min-width: 1600px) {
+.leftqrcode{
+	left:80px;
+}
+.rightqrcode{
+	right:80px;
+}
+}
+@media screen and (min-width: 1750px) {
+.leftqrcode{
+	left:120px;
+}
+.rightqrcode{
+	right:120px;
+}
+}
+@-webkit-keyframes loading{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);}}@-moz-keyframes loading{0%{-moz-transform:rotate(0deg);}100%{-moz-transform:rotate(360deg);}}@-o-keyframes loading{0%{-o-transform:rotate(0deg);}100%{-o-transform:rotate(360deg);}}@-ms-keyframes loading{0%{-ms-transform:rotate(0deg);}100%{-ms-transform:rotate(360deg);}}@keyframes loading{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}.mp_loading{position:absolute; width:100%; height:100%; overflow:hidden; background-color:black; left:0; top:0; -webkit-transform-style:preserve-3d; z-index:1;}.mp_loading_clip{position:absolute; left:50%; top:50%; width:60px; height:60px; margin:-30px 0 0 -30px; overflow:hidden;  -webkit-animation:loading 1.2s linear infinite; -moz-animation:loading 1.2s linear infinite; -o-animation:loading 1.2s linear infinite; -ms-animation:loading 1.2s linear infinite; animation:loading 1.2s linear infinite;}.mp_loading_bar{position:absolute; left:0; top:0; width: 54px;height: 54px; border-radius:50px; overflow:hidden; clip: rect(0px,36px,70px,0); background:rgba(0,0,0,0); border:3px solid #fff367; -webkit-mask:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,1)),to(rgba(255,255,255,0)));}.mp_loading_txt{width: 100px;height: 30px;line-height: 30px;position: absolute;left: 50%;top: 50%;margin-left: -50px;margin-top: -15px;text-align: center;color: #fff;}
+.mp_loading_cover {
+   width: 100%;
+   height: 100%;
+   background: #000;
+   opacity: 0.8!important;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 1500;
+}
+</style>
+<title>有娱现场互动</title>
+</head>
+<body style="background:url('https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/bg.png') center;background-size: 100% 100%;">
+
+<div class="mp_loading_clip" id="loading_clip" style="z-index: 2002; display: none;">
+	<div class="mp_loading_bar"></div>
+</div>
+<div class="mp_loading_cover" style="z-index: 2000; display: none;"></div>
+<div class="leftqrcode"><img src="https://imgcdn.youyu.365huaer.com/2017/1/qrcode/b6739285-d353-4b48-bcf0-35382f208023.png"></div>
+<div class="rightqrcode"><img src="https://imgcdn.youyu.365huaer.com/2017/1/qrcode/b6739285-d353-4b48-bcf0-35382f208023.png"></div>
+<div class="container fixed">
+
+	<div class="top">
+		<div class="left">
+			<img class="logo" src="https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/logo.png">
+		</div>
+		<div class="center">
+			<span class="title" style="font-size: 35px;">有娱现场互动</span>
+		</div>
+		<div class="right">
+			<span class="tipword messageword">
+				<span class="num">13</span><br>
+				<span class="plus">条消息</span>				
+			</span>
+			<!-- <span class="tipword signword Hidden">
+				<span class="num">2</span><br>
+				<span class="plus">人签到</span>				
+			</span> -->
+			<img class="qrcode" src="https://imgcdn.youyu.365huaer.com/2017/1/qrcode/b6739285-d353-4b48-bcf0-35382f208023.png">
+		</div>
+	</div>
+
+	<!-- 展示模块 -->
+	<div class="main">
+
+		<!-- 消息墙 -->
+		<div class="data">
+			<div class="picScroll-top">
+		 
+				<div class="bd">
+					<ul class="picList">
+
+						<li style="visibility: visible;">
+						    <div class="wrap">
+						        <div class="info">
+						            <div class="header">
+						              
+
+						                <img src="http://wx.qlogo.cn/mmopen/Sd1Sj1o1ibiaKQ0Lty3wTsyz37wrTwlKuwI1ZEXVMicd8OGXdvicsVv0YG2ibBOic1HJBLy090eaYibia8wp2N21vorz9LTh0icwM3Zvb/132">
+						            </div>
+						            <div class="name">小明</div></div>
+						        <div class="content" style="line-height: 172px;">
+						            <span class="abc">奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的假奥斯卡；冷风机阿斯兰的；可激发的&nbsp;</span></div>
+						        <span class="pointer1"></span>
+						    </div>
+						</li>
+
+
+						 <li style="visibility: visible;">
+						    <div class="wrap">
+						        <div class="info">
+						            <div class="header">
+						               
+
+						                <img src="http://wx.qlogo.cn/mmopen/Sd1Sj1o1ibiaKQ0Lty3wTsyz37wrTwlKuwI1ZEXVMicd8OGXdvicsVv0YG2ibBOic1HJBLy090eaYibia8wp2N21vorz9LTh0icwM3Zvb/132">
+						            </div>
+						            <div class="name">小明</div></div>
+						        <div class="content" style="line-height: 172px;">
+						            <span class="abc">奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的假奥斯卡；冷风机阿斯兰的；可激发的&nbsp;</span></div>
+						        <span class="pointer1"></span>
+						    </div>
+						</li>
+
+						<li style="visibility: visible;">
+						    <div class="wrap">
+						        <div class="info">
+						            <div class="header">
+						                <img src="http://wx.qlogo.cn/mmopen/Sd1Sj1o1ibiaKQ0Lty3wTsyz37wrTwlKuwI1ZEXVMicd8OGXdvicsVv0YG2ibBOic1HJBLy090eaYibia8wp2N21vorz9LTh0icwM3Zvb/132">
+						            </div>
+						            <div class="name">小明</div></div>
+						        <div class="content" style="line-height: 172px;">
+						            <span class="abc">奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的假奥斯卡；冷风机阿斯兰的；可激发的&nbsp;</span></div>
+						        <span class="pointer1"></span>
+						    </div>
+						</li>
+
+						<li style="visibility: visible;">
+						    <div class="wrap">
+						        <div class="info">
+						            <div class="header">
+						              
+
+						                <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/img/yuanxiaoreal_1cf901671f26c03aa602c4d5cfe28709.png">
+						            </div>
+						            <div class="name">小明</div></div>
+						        <div class="content" style="line-height: 172px;">
+						            <span class="abc">奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的假奥斯卡；冷风机阿斯兰的；可激发的&nbsp;</span></div>
+						        <span class="pointer1"></span>
+						    </div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 信息全文 -->
+		<div class="detail" >
+			<img class="close" src="https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/close.png">
+			<div class="top">
+				<div class="header">
+	                <img class="logo" src="http://wx.qlogo.cn/mmopen/Sd1Sj1o1ibiaKQ0Lty3wTsyz37wrTwlKuwI1ZEXVMicd8OGXdvicsVv0YG2ibBOic1HJBLy090eaYibia8wp2N21vorz9LTh0icwM3Zvb/132">
+	            </div>
+				<div class="name"> </div>
+			</div>
+			<div class="bottom">奥斯卡级放大的叫法卢卡斯的叫法；三了肯奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的奥斯卡级放大的叫法卢卡斯的叫法；三了肯德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的德基；发送卡打飞机；阿斯兰的放假奥斯卡；冷风机阿斯兰的；可激发的</div>
+
+ 
+		</div>
+		<!-- 二维码墙 -->
+		<div class="container1">
+		    <div class="nav">打开微信扫描以下任意二维码，参与现场互动</div>
+		    <div class="qrcode">
+		        
+		        <img class="big" src="https://imgcdn.youyu.365huaer.com/2017/1/qrcode/b6739285-d353-4b48-bcf0-35382f208023.png">
+		        <img class="middle" src="https://imgcdn.youyu.365huaer.com/2017/1/qrcode/b6739285-d353-4b48-bcf0-35382f208023.png">
+		        <img class="small" src="https://imgcdn.youyu.365huaer.com/2017/1/qrcode/b6739285-d353-4b48-bcf0-35382f208023.png"></div>
+		</div>
+	</div>
+	<!-- <div class="talk">
+		<span class="icon"></span>
+		<span class="word">
+			<span class="scroll" style="margin-top: 0px;">
+				<span>扫描二维码签到后，发送想说的话即可上墙，欢迎大家踊跃发言</span><br>
+			</span>
+		</span>
+	</div> -->
+
+	<!-- 页面底部 -->
+	<div class="bottom">  
+		<div class="opened">
+			<div class="point"><img src="https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/opened.png"></div>
+			<div class="item">
+				<ul>
+					<li title="全屏，快捷键Q" class="f11"  >
+						<span class="icon screen"></span><br>
+						<span class="text">全屏</span>
+						<span class="pointer"></span>
+
+					</li>
+					<li class="Hidden" title="取消全屏，快捷键Q">
+						<span class="icon exit_screen"></span><br>
+						<span class="text">退出全屏</span>
+					</li>
+					<li title="显示二维码，快捷键E" page="qrcode" class="code">
+						<span class="icon qrcode"></span><br>
+						<span class="text">二维码</span>
+					</li>
+					<li title="显示消息墙，快捷键X" page="message" class="message_data">
+						<span class="icon message"></span><br>
+						<span class="text">消息墙</span>
+					</li>
+					<!-- <li title="签到墙，快捷键D" page="signNew">
+						<span class="icon sign"></span><br>
+						<span class="text">签到墙</span>
+					</li> -->
+						<!--
+					<li title="控制" page="control">
+						<span class="icon control"></span><br>
+						<span class="text">控制</span>
+					</li>
+					-->
+				</ul>
+			</div>
+		</div>
+		<div class="closed Hidden">
+			<div class="point"><img src="https://static.resource.youyu.weijuju.com//image/page/nianhui/screen/chosed.png"></div>
+		</div>
+	</div>
+
+
+
+
+	<style type="text/css">
+		.picScroll-top{ margin:0 auto;  width:99.8%;  overflow:hidden; position:relative;  border:1px solid #ccc; z-index: 2  }
+		.picScroll-top .bd{/* padding:10px; */  }
+		.picScroll-top .bd ul{ overflow:hidden; zoom:1; }
+		.picScroll-top ul li {height:156px;margin-bottom:0px;overflow:initial;position:relative;}
+		.picScroll-top ul li:hover  .pointer1  {display: block;}
+		.picScroll-top ul li .wrap .info {width:100px;padding-left:2px;padding-top:8px;}
+		.picScroll-top ul li .wrap > div {float:left;}
+		.picScroll-top ul li .wrap .info .header{background:url("./img1/header_border.png") center center / 100px 100px no-repeat;height:100px;width:100px;padding-top:2px;float:left;margin-top:33px;}
+		.picScroll-top ul li .wrap .info .header img {width: 85%;height: 85%;border-radius: 50%;margin-top:7px;margin-left:7.5px;}
+		.picScroll-top ul li .wrap .info .name {color:white;font-size:18px;text-align:center;margin-top:-2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+		.picScroll-top ul li .wrap .content {width:832px;height:156px;line-height:196px;margin-left:15px;background:url(./img1/message_border.png) 0% 0% / 840px 152px no-repeat;vertical-align:middle;cursor:pointer;}
+		.picScroll-top ul li .wrap .content span {color:rgb(232,2,60);font-size:30px;font-weight:bold;margin-left:56px;line-height:40px;display:inline-block;width:732px;word-break:break-all;overflow:hidden;max-height:109px;height:40px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+		.picScroll-top ul li .pointer1 {width:100px;height:100px;background:url(./img1/next.png) center center / contain no-repeat;position:absolute;top:26px;right:15px;cursor:pointer;display:none;}
+
+		.detail {position:absolute;background:url("./img1/qrcode_boder.png") center center / 990px 490px no-repeat;width:960px;height:470px;top:-4px;left:0px;display:none;z-index: 10}
+		.detail .close {position:absolute;top:10px;right:13px;cursor:pointer;}
+		.detail .top {overflow:hidden;width:88%;margin-left:6%;border-bottom:1px solid white;height:150px;line-height:150px;}
+		.detail .top .header {background:url("./img1/header_border.png") center center / 100px 100px no-repeat;height:100px;width:100px;padding-top:2px;float:left;margin-top:33px;}
+		.detail .top .header img {width: 85%;height: 85%;border-radius: 50%;margin-top:7px;margin-left:7.5px;}/*span {display:block;background:url("./img1/header.jpg") center center / cover no-repeat white;border-radius:50px;width:85px;height:85px;margin-top:7px;margin-left:7.5px;}*/
+		.detail .top .name {color:rgb(232,2,60);font-size:28px;text-align:center;margin-top:66px;float:left;font-weight:bold;margin-left:15px;}
+		.detail .bottom {width:840px;font-size:30px;color:rgb(232,2,60);padding:0px 0px 15px 62px;margin-top:15px;font-weight:bold;height:250px;overflow:auto;}
+		.detail .bottom > img {height:92%;margin-top:1%;}
+
+		.container1 {background:url("./img1/qrcode_boder.png") center no-repeat;background-size:1006px 490px;margin-left:1px;width:960px;height:470px;display: none}
+		.container1 .nav {width:825px;height:80px;line-height:100px;margin:0 68px;font-size:25px;color:#e8023c;border-bottom:1px solid #e8023c;}
+		.container1 .qrcode {padding-left:68px;padding-top:28px;}
+		.container1 .qrcode .big {width:310px;}
+		.container1 .qrcode .middle {width:225px;margin-left:40px;}
+		.container1 .qrcode .small {width:150px;margin-left:40px;}
+
+	</style>
+ 
+	<script type="text/javascript">
+		jQuery(".picScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:3});
+
+
+		$(function () {
+			//点击信息全文
+			$(".pointer1").click(function(){
+
+				var text =$(this).closest('.wrap').find(".abc").text();
+				var name =$(this).closest('.wrap').find(".name").text();
+				var logo = $(this).closest('.wrap').find(".header").find("img").attr("src");
+				$(".detail .bottom").text(text);
+				$(".detail").show();
+				$(".data").hide();
+				$(".detail .top .name").text(name);
+				$(".detail .top .logo").attr("src",logo);
+			})
+
+			//关闭信息全文 
+			$(".close").click(function(){
+
+				var text =$(this).closest('.wrap').find(".abc").text();
+				//$(".bottom").text(text);
+				$(".data").show();
+				$(".detail").hide();
+			})
+
+			// 展示二维码
+			$(".code").click(function(){
+
+				var text =$(this).closest('.wrap').find(".abc").text();
+				//$(".bottom").text(text);
+				$(".container1").show();
+				$(".data").hide();
+			})
+
+			//点击的消息墙
+			$(".message_data").click(function(){
+
+				var text =$(this).closest('.wrap').find(".abc").text();						
+				$(".detail").hide();
+				$(".container1").hide();
+				$(".data").show();
+			})
+
+
+
+
+
+
+			 //全屏、退出全屏 调用
+			$('.container .bottom .opened .item ul li .icon.screen').click(function(){
+				fullScreen();
+				$('.container .bottom .opened .item ul li .icon.screen').closest('li').addClass('Hidden');
+				$('.container .bottom .opened .item ul li .icon.exit_screen').closest('li').removeClass('Hidden');
+			});
+			$('.container .bottom .opened .item ul li .icon.exit_screen').click(function(){
+				exitFullScreen();
+				$('.container .bottom .opened .item ul li .icon.screen').closest('li').removeClass('Hidden');
+				$('.container .bottom .opened .item ul li .icon.exit_screen').closest('li').addClass('Hidden');
+			});
+
+			//全屏 核心代码
+				function fullScreen() {
+					var el = document.documentElement,
+						rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen,
+						wscript;
+				 
+					if(typeof rfs != "undefined" && rfs) {
+						rfs.call(el);
+						return;
+					}
+				 
+					if(typeof window.ActiveXObject != "undefined") {
+						wscript = new ActiveXObject("WScript.Shell");
+						if(wscript) {
+							wscript.SendKeys("{F11}");
+						}
+					}
+				}
+			//退出全屏  核心代码
+			function exitFullScreen() {
+				var el = document,
+					cfs = el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen,
+					wscript;
+			 
+				if (typeof cfs != "undefined" && cfs) {
+				  cfs.call(el);
+				  return;
+				}
+			 
+				if (typeof window.ActiveXObject != "undefined") {
+					wscript = new ActiveXObject("WScript.Shell");
+					if (wscript != null) {
+						wscript.SendKeys("{F11}");
+					}
+			    }
+			}
+
+			//菜单打开、关闭	
+				var $openedItem=$('.container .bottom .opened');
+				var $closedItem=$('.container .bottom .closed');
+				$('.container .bottom .opened .point').click(function(){
+					$openedItem.addClass('Hidden');
+					$closedItem.removeClass('Hidden');
+				});
+				$('.container .bottom .closed .point').click(function(){
+					$openedItem.removeClass('Hidden');
+					$closedItem.addClass('Hidden');
+				});
+
+			 
+		})
+	</script>
+
+
+
+</div>
+ 
+
+
+ </body></html>

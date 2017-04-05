@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/app.css"/>
+		<link rel="stylesheet" href="./css/base.css">
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="./js/mui.min.js"></script>
+		<script src="./js/TouchSlide.1.1.js"></script>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left colwhite fz24"></a>
+			<div class="mui-title colwhite choice">
+				<a  class="on"  href=""><span>按部位</span></a>
+				<a     href=""><span>按疾病</span></a>
+			</div>
+		</header>	
+		
+		<div class="self ">
+			<div class="human">
+				<ul>
+					<li class="four">
+						<a href=""><span>耳部</span></a>
+						<a href=""><span>眼部</span></a>
+						<a href=""><span>鼻部</span></a>
+						<a href=""><span>喉咙</span></a>
+					</li>
+
+					<li class="four" >
+						<a href=""><span>耳部</span></a>
+						<a href=""><span>眼部</span></a>
+						<a href=""><span>鼻部</span></a>
+						<a href=""><span>喉咙</span></a>
+					</li>
+
+					<li  class="two" >
+						<a href=""><span>肩部</span></a>
+						<a href=""><span>颈部</span></a>
+					</li>
+
+					<li  class="two" >
+						<a href=""><span>上肢</span></a>
+						<a href=""><span>胸部</span></a>
+					</li>
+
+					 
+					<li  class="two" >
+						<a href=""><span>手部</span></a>
+						<a href=""><span>腰部</span></a>
+					</li>
+
+					<li  class="two" >
+						<a href=""><span>骨盆</span></a>
+						<a href=""><span>生殖器部位</span></a>
+					</li>
+
+					<li  class="two" >
+						<a href=""><span>肛门/直肠</span></a>
+						<a href=""><span>皮肤</span></a>
+					</li>
+
+					<li  class="two" >
+						<a href=""><span>下肢</span></a>
+						<a href=""><span>足部</span></a>
+					</li>
+
+					<li id="choice">
+						<div class="  sex">
+							<span>男</span>
+							<div class="mui-switch mui-switch-blue mui-switch-mini haha ">
+								<div class="mui-switch-handle n" id="sex"></div>
+							</div>
+							<span>女</span>
+					 	</div>
+
+						<div class="  psitive">
+							
+							<span>背</span>
+							<div class="mui-switch mui-switch-blue mui-switch-mini   yoyo ">
+								<div class="mui-switch-handle z" id="psitive"></div>
+							</div>
+							<span>正</span>
+						</div>
+
+
+					</li>
+
+
+
+
+				</ul>
+
+				<div class="model">
+					<img class="model_img" src="./img/diagnosis/m1.png">
+
+				</div>
+
+			</div> 	
+
+			<div class="medicine">
+				<div class="tiltle">
+					<p>对症购药</p>
+				</div>
+
+
+				<div class="label">
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+					<div class="mui-btn ">蓝色</div>
+				</div>
+
+
+			</div>
+		
+		</div>
+
+		<div class="self_foot_bar" >
+		 
+		    <div class="text">
+		        <ul>
+		            <li class="icon-channel ">
+		            	<a href="#bottomPopover">
+		                	<span   class="own  col1e9854" >自我诊疗</span>
+		                </a>
+		            </li>
+
+		            <li class="icon-channel ">
+		            	<a href="">
+			            	<span class="kf ">联系客服</span>
+			            </a>
+		            </li>
+		 
+
+
+		         
+
+
+		        </ul>
+		    </div>
+		</div>
+
+
+		<script type="text/javascript">
+
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+
+
+
+			$(".haha").bind('click',function(){   
+				if(!$(this).hasClass('mui-active')){ //男
+					if(!$(".yoyo").hasClass('mui-active')){  
+						$(".model_img").attr("src","./img/diagnosis/m1.png");
+					}else{
+						$(".model_img").attr("src","./img/diagnosis/m2.png");
+					}
+				
+					$("#sex").removeClass("l");
+					$("#sex").addClass("n");		
+					 
+				}else{
+					if(!$(".yoyo").hasClass('mui-active')){  //女
+						$(".model_img").attr("src","./img/diagnosis/l1.png");
+					}else{
+						$(".model_img").attr("src","./img/diagnosis/l2.png"); 
+					}
+					 
+					$("#sex").removeClass("n");
+					$("#sex").addClass("l");
+
+				}
+			});
+
+
+			$(".yoyo").bind('click',function(){
+				if(!$(this).hasClass('mui-active')){ //正
+					if(!$(".haha").hasClass('mui-active')){  
+						$(".model_img").attr("src","./img/diagnosis/m1.png");//男正
+					}else{
+						$(".model_img").attr("src","./img/diagnosis/l1.png");//女正
+					}
+
+					$("#psitive").removeClass("b")	;
+					$("#psitive").addClass("z")	;
+					 
+				}else{
+					if(!$(".haha").hasClass('mui-active')){  //背
+						$(".model_img").attr("src","./img/diagnosis/m2.png");//男背
+					}else{
+						$(".model_img").attr("src","./img/diagnosis/l2.png");//女背
+					}
+					
+					$("#psitive").removeClass("z")	;
+					$("#psitive").addClass("b")		;
+				}
+			});
+
+
+
+
+
+
+
+
+
+		</script>
+
+
+			
+		</script>
+	 
+
+
+
+
+
+		
+		 
+	</body>
+	</body>
+
+</html>

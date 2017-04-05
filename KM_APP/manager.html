@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>店铺管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<link rel="stylesheet" href="./css/base.css">
+		 
+	
+	</head>
+
+	<body>
+
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left colwhite fz24"></a>
+			<h1 class="mui-title colwhite">店铺管理</h1>
+		</header>	
+
+		<div class="manager header-top">
+			
+ 
+			<div class="manager_content">
+
+				<div class="my">
+					<ul class="mui-table-view">
+
+
+						<li class="mui-table-view-cell">
+							 
+								 店铺名称 <p>阿斯达的订单</p>
+							 
+						</li>
+			 
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								 店铺简介 <p>未设置</p>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								我的地址    <p>广州市</p>
+							</a>
+						</li>
+
+
+
+
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right  " href=" ">
+								<span class=" portrait"></span>店铺头像
+								<input hidden="" type="file" id="qrcode1" name="qrcode" onchange="previewImage(this,'1')">
+								<div id="preview1" class="fr manager_img " haveimg="1">
+									<img id="Display_qr1" onclick="click_file('1')" src="./img/index/zx.png" width="100" height="40">
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+
+
+				 
+
+
+
+			</div>
+
+			 
+		</div>		
+
+		 
+
+		<script src="./js/mui.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script type="text/javascript">
+
+
+		function previewImage(file,inp){
+
+        	var fileName = file.value;
+        	var type = fileName.substring( fileName.lastIndexOf(".") + 1).toUpperCase();   // 获取后缀名并转大写
+        	var div = document.getElementById('preview'+inp); //获取 div
+
+        	if (file.files && file.files[0]){//  有文件
+        	
+           		div.innerHTML ='<img id=Display_qr'+inp+' onclick=click_file('+inp+')>';//改变 div内容
+           		var img = document.getElementById('Display_qr'+inp); //  获取 img
+           		img.onload = function(){//  当 img标签  图片加载后
+           		var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);  // 返回宽高
+           		img.width  =  rect.width;
+           		img.height =  rect.height;//  改变img标签 宽高 / 边距
+	 
+            }
+              	var reader = new FileReader();
+              	reader.onload = function(evt){img.src = evt.target.result;}
+              	reader.readAsDataURL(file.files[0]);
+        	}
+        
+        }
+       
+
+
+
+        function click_file(inp){ 
+
+			$('#qrcode'+inp).click();
+		}
+
+
+		
+
+		</script>
+
+	 
+		 
+	
+
+	 
+
+	</body>
+
+</html>

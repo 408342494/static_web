@@ -1,0 +1,178 @@
+/**
+* Demo Stuff
+*/
+body {
+  background: #1BBC9B;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  text-align: center;
+}
+h1 {
+  color: #117964;
+  font-weight: 400;
+  font-size: 2em;
+  
+}
+.style-3{}
+/**
+* iPhone
+* Credits: Flat, Scaleable CSS iPhone Illustration by Tom Hergenreter
+* http://codepen.io/TomHergenreter/details/qDywF/
+*/
+.iphone {
+  width:100%;
+   
+    
+ 
+  position: relative;
+  
+  background:black;
+}
+
+.iphone__screen {
+  width: 100%;
+  height:auto;
+  position: absolute;
+  
+  overflow: hidden;
+}
+.iphone__content {
+  position: relative;
+  background-color:#eee;
+  width: 100%;
+  height: 100%;
+}
+/**
+* Navigation Defaults
+*/
+.nav {
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.nav--active .nav {
+  opacity: 1;
+  background-color: #333;
+}
+.nav__list {
+  margin: 0;
+  padding: 50px;
+}
+.nav__item {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 20px;
+   
+}
+.nav__link {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  font-size: 25px;
+  width: 200px;
+  display: inline-block;
+}
+/* Default navigation icon */
+.nav__trigger {
+  color: black;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: 15px;
+  top: 15px;
+  z-index: 200;
+}
+.nav--active .nav__trigger {
+  opacity: 0.5;
+}
+.nav__icon {
+  /*background: black;*/
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 5px;
+  color: black;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: background-color, transform;
+  transition-property: background-color, transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.nav__icon:before,
+.nav__icon:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  background: #FFFFFF;
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.nav__icon:before {
+  margin-top: -10px;
+}
+.nav__icon:after {
+  margin-top: 10px;
+}
+/* Don't nest if you don't have to. */
+
+/**
+* Style #3
+*/
+.style-3 .nav {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.style-3 .nav--active .nav {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+.style-3 .iphone__content {
+  -webkit-transform: scale(1) translateX(0);
+          transform: scale(1) translateX(0);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.style-3 .iphone__screen {
+  background-color: #333;
+}
+.style-3 .nav--active .iphone__content {
+  -webkit-transform: scale(0.9) translateX(-90%);
+          transform: scale(0.9) translateX(-90%);
+}
+.style-3 .nav__icon {
+  background: rgba(0, 0, 0, 0);
+}
+.style-3 .nav__icon:before {
+  margin-top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.style-3 .nav__icon:after {
+  margin-top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.style-3 .nav--active .nav__icon {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+

@@ -1,0 +1,2419 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>aaa </title>
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content=" "/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="128x128" href="apple-touch-icon-precomposed.png">
+<meta name="msapplication-TileImage" content="apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="reset.css">
+<script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+
+ 
+
+</head>
+<body>
+
+<h2>移动端模板系列</h2>
+
+<style type="text/css"> /*公共部分样式*/
+body{background: #eee}
+.clear:before {content:" ";display:table;}
+.clear:after {clear:both;}
+.clear:after,.clear:before {content:" ";display:table;}
+.fl {float: left;}
+.fr {float: right;}
+</style>
+
+
+<h3>列表系列</h3>
+
+    <!-- 列表模板1 -->
+        <div class="list-box" id="wrapperright" style="height:auto;">
+            <ul class="product-list" id="prolist">
+                <li class="exhibition clear">
+                    <a href=" " target="_self">
+                        <div class="list-item-l">
+                            <div class="attribute"> 开店</div>
+                            <div class="exhibition_title "> [商城C级代理+20%返利+产品=188</div>
+                            <div class="subtitle">补水,祛痘,淡斑,BB霜,香水,去黑头</div>
+                            <div class="price">
+                                <div class="money">
+                                    <p>原价</p>
+                                    <p class="text-decoration"> ￥288   <em>￥</em></p>
+                                </div>
+
+                                <div class="new">188. <p>00</p></div>
+                            </div>
+                        </div>
+                        <div class="list-item-r">
+                            <img src="http://www.haolianmian.com.cn/file/upload/201610/15/183731181.jpg.thumb.jpg">
+                            <div class="post none">
+                                <div class="float">-100元</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="exhibition clear">
+                    <a href=" " target="_self">
+                        <div class="list-item-l">
+                            <div class="attribute"> 开店</div>
+                            <div class="exhibition_title "> [商城C级代理+20%返利+产品=188</div>
+                            <div class="subtitle">补水,祛痘,淡斑,BB霜,香水,去黑头</div>
+                            <div class="price">
+                                <div class="money">
+                                    <p>原价</p>
+                                    <p class="text-decoration"> ￥288   <em>￥</em></p>
+                                </div>
+
+                                <div class="new">188. <p>00</p></div>
+                            </div>
+                        </div>
+                        <div class="list-item-r">
+                            <img src="http://www.haolianmian.com.cn/file/upload/201610/15/183731181.jpg.thumb.jpg">
+                            <div class="post  ">
+                                <div class="float">-100元</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                                            
+            </ul>
+
+            <style type="text/css">
+                #prolist {background: #eee;}
+                .exhibition {width: 99%;height: auto;  border: 1px solid #d7d7d7;padding-bottom: 5px;margin: 0 auto;background: white; padding-top:3px; }
+                .exhibition a {width: 100%;height: 100%}
+                .exhibition .list-item-l {width:calc(100% - 100px);height: 100%;margin-left: 5px;padding-top: 10px;float: left;}
+                .exhibition .list-item-l  .attribute {width: 70px;height: 20px;border-radius:5px;font-size: 13px;background: #009944;/*font-weight: bold*/;line-height: 15px;text-align: center;color: white;padding-top: 2px;}
+                .list-item-l .exhibition_title {    font-family: 黑体;line-height: 16px; font-size: 16px;font-weight: bolder; width: 100%;height: 16px;text-align: left;color: #333;padding-top:5px;margin-top: 3px;overflow: hidden;}
+                .list-item-l .subtitle {color: #999;font-size: 8px;height: 15px;line-height: 13px;margin-top: 3px;}
+                .list-item-l .price {width: 100%; height: 35px;margin-top: 10px; }
+                .list-item-l .price .money {float: left;width: 50px;height: 35px;padding-top: 5px;border: 0px !important;display: block}
+                .list-item-l .price .money  p {display: inline-block;width: 100%;height:12px;font-size: 12px;float: left;line-height: 10px;color: #666}
+                .list-item-l .price .money  p  em {float: right;font-weight: bold;color: #f50000; text-align: right;}
+                .list-item-l .price  .new {width: 60%;height: 25px;float:left;font-size: 25px;color: #f50000;position: relative;left:0px;font-weight: bold;line-height:25px;padding-top: 4px; }
+                .new p {display: inline-block;height: 20px;width:15px;text-decoration: underline;text-decoration-color: #f50000;;font-size: 12px; position: relative;font-weight: bold;;right:5px;top: -2px;}
+                .exhibition .list-item-r {width: 90px;height: 90px;background: white;margin-left: 5px;padding-top: 10px;float: right;position: relative;}
+                .exhibition .list-item-r img {width: 90px;height: 90px}
+                .exhibition .list-item-r .post  {width: 50px;width: 80px;height: 50px;position: relative;bottom: 80px;}
+                .exhibition .list-item-r .float {position: absolute;width: 80px;height: 50px;background: url(img/sheng.png) no-repeat; top:28px;color: white;font-size: 8px;line-height: 10px;padding-top: 19px;padding-left: 6px;left:-28px;}
+
+            </style>
+        </div>
+    <!-- 列表模板1 -->
+    <br><br><br><br><br><br><br><br><br>
+
+
+
+    <!-- 列表模板2 -->
+        <ul class="product_list fl" id="product_list">
+            <li class="mall_list_commodity">
+                <a class="fl" href=" " target="_self">
+                    <div class="mall_list_commodity_img">
+                        <img src="http://www.haolianmian.com.cn/file/upload/201606/18/09594820124875.jpg.thumb.jpg"   onerror="this.src='static/img/nopic-60.png';">
+                    </div>
+                </a>
+                <a class="fl commodity_info" href=" " target="_self">
+                    <span class="title">渲婷 深海鱼油矿泉保湿喷雾水</span>
+                    <p class="format">规格：120ml/瓶 原价：￥94</p> 
+                </a>
+                <div class="designation">
+                    <div class="fl">
+                        <span class="price"> <em>8.4折</em> ￥79.00</span>
+                    </div>
+                    <div class="fr">
+                        <span class="money">
+                            <em onclick="alter( '-');">-</em>
+                            <input type="number" id="number_2381" value="0" style="width:25px;float:left;text-align:center;color:#1e9854;border: none !important;">
+                            <em onclick="alter('+');">+</em>
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <style type="text/css">
+                .new_product_margin{margin:10px auto 0;}
+                .new_product{width:100%;overflow: hidden;}
+                .product_list{width:100%;overflow: hidden;}
+                .product_list li{position: relative;background-color: #fff;overflow: hidden;/*padding-bottom: 10px; *//*font-size: 12px;*/border/*-bottom*/:1px solid #dcdcdc;box-sizing: border-box;height: 107px;}
+                .product_list li a {width: auto;height: auto;display: inline-block;}
+                .mall_list_commodity .mall_list_commodity_img {width: 106px;height: 106px;border-right:1px solid #dcdcdc;  }
+                .mall_list_commodity .mall_list_commodity_img img { width: 103px;height: 103px;padding: 3px 0 0 3px;}
+                .mall_list_commodity .commodity_info { ;width: 60%;margin:8px 3%;height: 62px}
+                .mall_list_commodity .commodity_info .title {float: left;line-height: 20px;max-height: 40px;overflow: hidden;font-size: 14px;color: #333;font-family:"Microsoft YaHei";padding: 0 !important;width: 100%}
+                .mall_list_commodity .commodity_info .format {float: left;font-size: 12px;color: #666}
+                .mall_list_commodity .designation {float: left;width: 60%; margin: 0 3%;}
+                .mall_list_commodity .designation .price {font-size: 14px;}
+                .mall_list_commodity .designation .price em {background: #e51a4b;border-radius: 3px;font-size: 10px;padding: 0 3px;color: white;position: relative;top: -2px;}
+                .mall_list_commodity .designation .money {border: 1px solid #dcdcdc;color: #999999;font-size: 14px;margin-top: -9px;height: 30px;display: inline-block}
+                .mall_list_commodity .designation .money em {display: block;font-style: normal;color: #999999;background: #F3F3F3;float: left;text-align: center;height: 28px !important;width: 30px !important;line-height: 28px !important;font-size: 14px !important;padding-bottom: 2px;margin-top: 0px;}
+                .mall_list_commodity .designation input {height: 18px !important;line-height: 18px !important;font-size: 15px !important;height: 28px !important;line-height: 28px  !important;font-size: 14px !important;/* margin-top: -1px; */}
+        </style>
+
+        <script type="text/javascript">
+                 // 购买数量的加减
+                    function alter(t) {  
+                        var number = parseInt($('#number_2381').val());
+                        
+                        if(t == '+') {
+                            $('#number_2381').val(number+1);
+                        } else {
+                            if(number <= 0) return;
+                            $('#number_2381').val(number-1);
+                        }
+                       
+                    }
+                // 购买数量的加减
+        </script>
+    <!-- 列表模板2 -->    
+     <br><br><br><br><br><br><br><br><br>
+    <!-- 列表模板3 -->
+
+   
+
+        <div class="new_product " style="background:#fff;">
+            <ul class="product_list1 fl">
+                <li class="product_two">
+                    <a href="index.php?fromid=0&amp;moduleid=16&amp;itemid=2921" target="_self">
+                        <img src="http://e.wx166.com/file/upload/201701/13/15540978524.jpg.thumb.jpg" alt="菲诗良品蜡菊赋颜御龄修护面膜">
+                        <p>菲诗良品蜡菊赋颜御龄修护面膜</p>
+                        <div class="product_list_bot">
+                            <span class="fl prcie">38.00</span>
+                            <span class="fr detailed">去看看</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="product_two">
+                    <a href="index.php?fromid=0&amp;moduleid=16&amp;itemid=2920" target="_self">
+                        <img src="http://e.wx166.com/file/upload/201701/13/15521634524.jpg.thumb.jpg" alt="菲诗良品芍药净透育颜焕亮面膜">
+                        <p>菲诗良品芍药净透育颜焕亮面膜</p>
+                        <div class="product_list_bot">
+                            <span class="fl prcie">38.00</span>
+                            <span class="fr detailed">去看看</span>
+                        </div>
+                    </a>
+                </li>
+                    
+            </ul>
+
+            <style type="text/css">
+                .product_list1 .product_two {width: 49%;float: left;margin-left: 0.5%;margin-right: 0.5%;}
+                .product_list1 li {background-color: #fff;overflow: hidden;padding-bottom: 10px;margin-bottom: 10px;font-size: 12px;border: 1px solid #d4d4d4;box-sizing: border-box;}
+                .product_list1 li img {width: 100%;}
+                .product_list1 li p {height: 40px;line-height: 20px;margin: 3px;border-bottom: 1px solid #8e8e8e;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+                .product_list1 .product_list_bot {margin: 5px 5px;}
+                .product_list1 .product_two .prcie {font-size: 16px;}
+                .product_list1 .prcie {/*color: #007aff;f*/ont-size: 14px;}
+                .product_list1 .detailed {padding: 1%;border-radius: 3px;background-color: #007aff;color:#fff;}
+                .product_list1 .detailed a {color: #fff;}
+        
+            </style>
+        </div>
+    <!-- 列表模板3 -->
+    <br><br><br><br><br><br><br><br><br>
+
+
+
+    <!-- 列表模板4 -->
+
+        <div class="floor-container     ">
+            <div class="floor-graphic-item">
+                <div class="bdr-r graphic-separation  graphic-col02-sm ">
+                    <a   href=" " class="J_ping">
+                        <img class="space-img" src=" //st.360buyimg.com/m/images/index/load/05003.png  " style="opacity: 1;">
+                        <div class="real-show">
+                            <div class="graphic-text" style="opacity: 1;">
+                                <strong class="graphic-tit">时尚馆</strong>
+                                <p class="graphic-wz">买4免1</p>
+                            </div>
+                            <div class="graphic-img ">
+                                <img   class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3829/211/3260821393/28415/fd23cc9e/58818800N8a442424.jpg!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" graphic-separation  graphic-col02-sm ">
+                    <a href=" " class="J_ping">
+                        <img class="space-img" src=" //st.360buyimg.com/m/images/index/load/05003.png  " style="opacity: 1;">
+                        <div class="real-show">
+                            <div class="graphic-text" style="opacity: 1;">
+                                <strong class="graphic-tit">手机数码</strong>
+                                <p class="graphic-wz">Surface超低价</p>
+                                <span class="graphic-btn" style="background:#7b1aff">12期免息</span>
+                            </div>
+                            <div class="graphic-img ">
+                                <img   class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3232/84/5365671404/31590/71a4a2d/586c9841N9e2f363f.jpg!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bdr-r graphic-separation  graphic-col02-sm ">
+                    <a   href=" " class="J_ping">
+                       
+                        <div class="real-show">
+                            <div class="graphic-text" style="opacity: 1;">
+                                <strong class="graphic-tit">时尚馆</strong>
+                                <p class="graphic-wz">买4免1</p>
+                            </div>
+                            <div class="graphic-img ">
+                                <img   class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3829/211/3260821393/28415/fd23cc9e/58818800N8a442424.jpg!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="graphic-separation  graphic-col02-sm ">
+                    <a href=" " class="J_ping">
+                         
+                        <div class="real-show">
+                            <div class="graphic-text" style="opacity: 1;">
+                                <strong class="graphic-tit">手机数码</strong>
+                                <p class="graphic-wz">Surface超低价</p>
+                                <span class="graphic-btn" style="background:#7b1aff">12期免息</span>
+                            </div>
+                            <div class="graphic-img ">
+                                <img   class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3232/84/5365671404/31590/71a4a2d/586c9841N9e2f363f.jpg!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <style type="text/css">
+                .floor-container {width:100%;height:100%;overflow:hidden;font-size:0;}
+                .floor-graphic-item {width:100%;font-size:100%;overflow:hidden;}
+                .floor-graphic-item {background-color:#fff;}
+                .graphic-col02-sm {min-height:90px;}
+                .graphic-col02-sm,.graphic-col02-bg,.graphic-col02-lf {width:50%;position:relative;height:100%;float:left;}
+                .graphic-separation {background:#fff;position:relative;font-family:PingFang-Medium,PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;font-size:0;}
+                .graphic-separation {background:#fff;position:relative;font-family:PingFang-Medium,PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;font-size:0;}
+                .floor-container img {width:100%;height:auto;overflow:hidden;}
+                .show-img,.real-show {width:100%;height:100%;overflow:hidden;position:absolute;left:0;top:0;}
+                .real-show {padding:7px 0 5px 0;}
+                .graphic-col02-sm .graphic-text {width:55%;/*padding-right:3px;*/}
+                .graphic-text {opacity:1;float:left;width:55.625%;/*padding:0 4px 0 8px*/;overflow:hidden;}
+                .graphic-tit {font-size:14px;line-height:20px;color:#181818;display:block;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;display:box;line-clamp:1;box-orient:vertical;font-weight:600;}
+                .graphic-wz {color:#686868;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;display:box;line-clamp:1;box-orient:vertical;font-size:11px;line-height:15px;margin-bottom:2px;height:15px;}
+                .graphic-col02-sm .graphic-img {width:45%;padding-top:2px;float:right;}
+                .graphic-img {/*padding-right:5px*/;height:100%;}
+                .floor .opa1 {opacity:1;-webkit-transition:opacity .3s ease-in;}
+                .graphic-img img {overflow:hidden;text-align:center;width:100%;height:100%;opacity:1;}
+            </style>
+        </div>
+    <!-- 列表模板4 -->
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板5 -->    
+
+        <div class="floor-container       bdr-bottom   ">
+            <div class="floor-graphic-item">
+                <div class="bdr-r    graphic-separation  graphic-col04-bg ">
+                    <a  href=" " class="J_ping">
+                      <!--   <img class="space-img" src="//st.360buyimg.com/m/images/index/load/05007.png " > -->
+                        <div class="real-show">
+                            <div class="graphic-text "  >
+                                <strong class="graphic-tit">美食城</strong>
+                                <p class="graphic-wz">年货爆款直降</p>
+                            </div>
+                            <div class="graphic-img ">
+                                <img imgtitle="true" class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3895/28/1563392566/25104/600be831/58809946N54c5ce28.jpg!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bdr-r    graphic-separation  graphic-col04-bg ">
+                    <a  href=" " class="J_ping">
+                        <!-- <img class="space-img" src="//st.360buyimg.com/m/images/index/load/05007.png "  style="opacity: 0;"> -->
+                        <div class="real-show">
+                            <div class="graphic-text " style="opacity: 1;">
+                                <strong class="graphic-tit">电脑办公</strong>
+                                <p class="graphic-wz">i5游戏1999抢</p>
+                            </div>
+                            <div class="graphic-img ">
+                                <img imgtitle="true" class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3937/307/1629842603/21455/315fcf3b/58842caeN4f0fdc7b.png!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+               </div>   
+
+               <div class="bdr-r    graphic-separation  graphic-col04-bg ">
+                    <a  href=" " class="J_ping">
+                      <!--   <img class="space-img" src="//st.360buyimg.com/m/images/index/load/05007.png " > -->
+                        <div class="real-show">
+                            <div class="graphic-text "  >
+                                <strong class="graphic-tit">美食城</strong>
+                                <p class="graphic-wz">年货爆款直降</p>
+                            </div>
+                            <div class="graphic-img ">
+                                <img imgtitle="true" class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3895/28/1563392566/25104/600be831/58809946N54c5ce28.jpg!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bdr-r    graphic-separation  graphic-col04-bg ">
+                    <a  href=" " class="J_ping">
+                        <!-- <img class="space-img" src="//st.360buyimg.com/m/images/index/load/05007.png "  style="opacity: 0;"> -->
+                        <div class="real-show">
+                            <div class="graphic-text " style="opacity: 1;">
+                                <strong class="graphic-tit">电脑办公</strong>
+                                <p class="graphic-wz">i5游戏1999抢</p>
+                            </div>
+                            <div class="graphic-img ">
+                                <img imgtitle="true" class="opa1" src="https://m.360buyimg.com/mobilecms/jfs/t3937/307/1629842603/21455/315fcf3b/58842caeN4f0fdc7b.png!q70.jpg">
+                            </div>
+                        </div>
+                    </a>
+               </div>                             
+            </div>
+            <style type="text/css">
+                    .floor-container {width:100%;height:100%;overflow:hidden;font-size:0;}
+                    .floor-graphic-item {width:100%;font-size:100%;overflow:hidden;}
+                    .floor-graphic-item {background-color:#fff;}
+                    .graphic-col04-bg {position:relative;width:25%;float:left;}
+                    .graphic-col04-bg {min-height:103px;}
+                    .graphic-separation {background:#fff;position:relative;font-family:PingFang-Medium,PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;font-size:0;}
+                    .graphic-col04-sm .real-show,.graphic-col04-bg .real-show {padding:7px 7px 5px;}
+                    .show-img,.real-show {width:100%;height:100%;overflow:hidden;position:absolute;left:0;top:0;}
+                    .graphic-col04-bg .graphic-text {height:41.76%;}
+                    .graphic-col04-sm .graphic-text,.graphic-col04-bg .graphic-text {width:100%;padding:0;float:none;}
+                    .graphic-tit {font-size:14px;line-height:20px;color:#181818;display:block;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;display:box;line-clamp:1;box-orient:vertical;font-weight:600;}
+                    .graphic-col04-sm .graphic-wz,.graphic-col04-bg .graphic-wz {overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;display:box;line-clamp:1;box-orient:vertical;}
+                    .graphic-wz {color:#686868;overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;display:box;line-clamp:1;box-orient:vertical;font-size:11px;line-height:15px;margin-bottom:2px;height:15px;}
+                    .graphic-col04-bg .graphic-img {height:58.24%;}
+                    .graphic-col04-sm .graphic-img,.graphic-col04-bg .graphic-img {width:100%;padding:0 2px !important;}
+                    .floor .opa1 {opacity:1;-webkit-transition:opacity .3s ease-in;}
+                    .graphic-img img {overflow:hidden;text-align:center;width:100%;height:100%;opacity:1;}
+
+
+
+            </style>
+
+
+
+        </div>
+
+     <!-- 列表模板5 -->
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板6 -->  
+
+        <div class="seckill clear">
+            <div class="fl">
+                <img src="img/cccc.jpg">
+            </div>
+
+            <div class="fr">
+                <span class="tiltle">中文字中文字中文字中文字中文字中文字中文字中文字中文字中文字中文字中文字</span>
+
+                <div class="price">
+                    <p class="now">￥0.01</p>
+                    <p class="old">￥3.65</p>
+                </div>
+
+                <div class="time"> 还剩  
+                    <span class="h">37</span>:
+                    <span class="m">37</span>:
+                    <span class="s">37</span>
+                </div>
+
+                <div class="surplus">
+                    <span class="surplus_data" >剩余1704盒</span>
+                    <p class="mui-progressbar mui-progressbar-in" data-progress="00"><span style="transform: translate3d(-30%, 0px, 0px);"></span></p>  <!-- translate3d(-30%, 0px, 0px)  -30% 剩余比例 -->
+                </div>
+
+            </div>
+        </div>
+
+
+        <style type="text/css">
+            .seckill {width: 100%;/*height: 115px;*/background: white;padding: 5px    0px;}
+            .seckill .fl {width:105px;height: 105px;}
+            .seckill .fl img {width:105px;height: 105px;}
+            .seckill .fr {width:66%;height: 105px;}
+            .seckill .fr .tiltle {font-size: 14px;font-weight: bold;line-height: 18px;max-height: 37px;overflow: hidden;display: inline-block;width: 100%;}
+            .seckill .fr .price  {width: 100%;height: 21px;}
+            .seckill .fr .price p {display: inline-block;width: auto;margin-right: 15px;}
+            .seckill .fr .price .now {color: #ff5500;font-size: 21px;}
+            .seckill .fr .price .old {color: #888;font-size: 14px;text-decoration: line-through;}
+            .seckill .fr .time {color: #666;font-size: 14px;height: 20px;margin: 2px 0;}
+            .seckill .fr .time span {background: #444;color: white;display: inline-block;width: 20px;height: 20px;border-radius: 5px;vertical-align:middle;padding-left: 2px;margin: 0 6px;    line-height: 20px;}
+            .seckill .fr .surplus {width: 100%;height:12px;font-size: 12px;}
+            .seckill .fr .surplus .surplus_data {float: left;color: #666}
+            .seckill .fr .surplus .mui-progressbar {float: left;height: 10px;width: 50%;border-radius: 5px;margin: 5px; }
+            .seckill .fr .surplus .mui-progressbar span {background:#df3031;}
+            .seckill .fr .surplus .mui-progressbar span {border-radius: 5px;}
+            .seckill .fr .surplus.mui-progressbar {background: #ddd !important}
+        </style>
+    <!-- 列表模板6 -->  
+
+    <br><br><br><br><br><br><br><br><br>
+
+
+    <!-- 列表模板7 -->  
+        <div class="saleer">
+            <ul>
+                <li>
+                    <a href=" ">
+                    <div class="header"  data-time="10 Dec 2017 00:00:00">
+                        <span class="saleer_buy">特价</span>
+                        <span class="time">           </span>
+                        <span class="surplus">剩余1231盒</span>
+                    </div>
+                    <div class="nav">
+                        <div class="NavLeft">
+                            <div class="NavLeftImg">
+                                <img src="./img/cccc.jpg">
+                            </div>
+                            <span>中医药厂adffadfadfddfsdfsdf </span>
+                        </div>
+                        <div class="NavRight">
+                            <div class="NavRightTop">
+                                <p class="tiltle">阿达考虑分将考虑将的考虑进富士康的</span>
+                                <p class="subtitle">阿达考的</p>
+                            </div>
+                            <div class="NavRightLeft">
+                                <span>￥ <em> 123</em></span>
+                                <p>￥ 123</p>
+                            </div>
+                            <div class="NavRightRight">
+                                <span>疯抢中</span>
+                                <p>限量特惠</p>
+                            </div>
+                        </div>
+                    </div>  
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <style type="text/css">
+            .saleer {width: 100%;height: auto;margin-top: 10px; }
+            .saleer ul {width: 100%;height:auto;background: #eee;}
+            .saleer ul li {width: 100%;height: 130px;background: white; ;margin-bottom: 5px;border-bottom: 1px solid #dcdcdc  }
+            .saleer ul li a {width: 100%;height: 100%}
+            .saleer ul li .header {width: 100%;height: 29px;background: #df3031;}
+            .saleer ul li .header .saleer_buy {width:60px;height: 25px;margin: 2px 0px;background: url(img/3jx.png) no-repeat;line-height: 20px;font-size: 15px;padding-left:10px;padding-top:2px;color: #df3031;display: inline-block;  } 
+            .saleer ul li .header .time {width:180px;height: 25px;margin: 2px 0px;line-height: 20px;font-size: 12px;padding-left:4px;padding-top:2px;color: white;display: inline-block;  } 
+            .saleer .surplus {float: right;margin: 2px 0px;line-height: 20px;font-size: 12px;;padding:3px 10px 0 0;color: white}
+            .saleer .nav { width: 100%;height:98px;padding : 5px 0;  }
+            .saleer .NavLeft {width: 30%;height: 98px;float: left;margin-left: 2px; }
+            .saleer .NavLeftImg {width: 90px;height: 90px;margin:0 auto ; border: 1px solid #eee;}
+            .saleer .NavLeftImg img {width: 100%;height: 100%}
+            .saleer .NavLeft span {width: 100%;font-weight: bold;height: 19px;text-align: left;display:block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;line-height: 20px;font-size: 10px; background-color: rgba(171, 171, 171, 0.8); background:#ababab;color: white;position: relative;z-index: 5;top: -20px;margin:0 auto;/*opacity: 0.8;*/}
+            .saleer .NavRight { width: 67%;height: 94px; float: right;position: relative; }
+            .saleer .NavRightTop{width: 100%;height: 50px;padding-top: 5px; }
+            .saleer .NavRightTop .tiltle {font-weight: bold;max-height: 20px;width: 95%;display: inline-block;line-height: 18px;font-size: 13px; color: black; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-bottom:0px; }
+            .saleer .NavRightTop .subtitle{color: #666; ;font-size: 10px;/*margin-bottom: 0px !important;position: relative; top:-8px;*/}     
+            .saleer .NavRightLeft {width:60px;height: 30px;float: left;/*margin-top:4px;*/}
+            .saleer .NavRightLeft span {font-size: 10px;color: #f50000;height: 15px;}
+            .saleer .NavRightLeft span em {font-size: 18px;color: #f50000;text-align: center;}
+            .saleer .NavRightLeft p {text-decoration: line-through;font-size: 10px;color: #666; height: 10px;position: relative;top: -3px;}
+            .saleer .NavRightRight {width:65px;height: 49px;float: left;background:#eee;float:right;margin-right: 20px;border: 1px solid #f75059;top:-11px;position: relative;}
+            .saleer .NavRightRight span {font-size: 13px;background: #f75059;text-align: center;width: 65px;line-height: 25px;display: inline-block;height: 25px;color: white;padding-top: 2px;font-weight: bold;}
+            .saleer .NavRightRight p {font-size: 13px;color: #f75059;padding-top: 0px;height: 21px;width: 65px;line-height: 25px;text-align: center;background: white;font-weight: bold;margin-bottom:0px;}
+        </style>
+
+        <script type="text/javascript">
+            $('.saleer ul li .header').each(function(){
+
+                var iNow = null;  //现在时间
+                var iNew = null; //目标时间
+                var t = 0;    //时间差
+                var str = '';  //显示的剩余时间
+                var timer = null;  //计时器
+                var you =$(this).find('.time')
+                iNew = new Date( $(this).data("time")   ); 
+                clearInterval( timer );        //初始化清楚定时器
+
+
+                timer = setInterval (function (){ //定时器 
+                iNow = new Date();         //现在时间 
+                    t = Math.floor( ( iNew - iNow ) / 1000 );  //时间差  
+                    if ( t >= 0 ) {                                //判断是否已经到时
+                        str = '剩余'+':'+Math.floor(t/86400)+'天'+Math.floor(t%86400/3600)+'小时'+Math.floor(t%86400%3600/60)+'分'+t%60+'秒';
+                        if (Math.floor(t/86400) > 0) {//判断要不要显示 天 时 分
+                            str ='剩余'+':'+ Math.floor(t/86400)+'天'+Math.floor(t%86400/3600)+'时'+Math.floor(t%86400%3600/60)+'分'+t%60+'秒';
+                        }else{
+                            if (Math.floor(t%86400/3600)> 0) {
+                                str ='剩余'+':'+ Math.floor(t%86400/3600)+'时'+Math.floor(t%86400%3600/60)+'分'+t%60+'秒';
+                            }else{
+                                if (Math.floor(t%86400%3600/60)> 0) {
+                                    str = '剩余'+':'+Math.floor(t%86400%3600/60)+'分'+t%60+'秒';
+                                }else{
+                                    str ='剩余'+':'+ t%60+'秒';
+                                }
+                            }
+                        }
+
+                        you.html(str);   //显示还有多少时间*/
+                    }else {
+                        clearInterval( timer) ;
+                        //you.html('hhhhhhh ')
+                        //window.location.reload() 
+                    } 
+
+                }, 1000);//定时器结束    
+                    
+               
+            })
+
+
+        </script>
+
+    <!-- 列表模板7 -->    
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板8 -->  
+        <div class="saleer2">
+            <ul>
+                <li>
+                    <a href=" ">
+                        <div class="nav">
+                            <div class="NavLeft">
+                                <div class="NavLeftImg">
+                                    <img src="./img/cccc.jpg">
+                                </div>
+                                <span>中医药厂adffadfadfddfsdfsdf </span>
+                            </div>
+                            <div class="NavRight">
+                                <div class="NavRightTop">
+                                    <p class="tiltle">阿达考虑分将考虑将的考虑进富士康的</span>
+                                    <p class="subtitle">阿达考的</p>
+                                </div>
+                                <div class="NavRightLeft">
+                                    <span>￥ <em> 123</em></span>
+                                    <p class="NavRightLeft_name">采药易</p><p class="received">已售1000盒</p>
+                                </div>
+                                <div class="NavRightRight">
+                                    <img src="./img/gwc.png">
+                                </div>
+                            </div>
+                        </div>  
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <style type="text/css">
+            .saleer2 {width: 100%;height: auto;margin-top: 10px; }
+            .saleer2 ul {width: 100%;height:auto;background: #eee;}
+            .saleer2 ul li {width: 100%;height: 100px;background: white; ;margin-bottom: 0px;border-bottom: 1px solid #dcdcdc  }
+            .saleer2 ul li a {width: 100%;height: 100%}
+            .saleer2 ul li .header {width: 100%;height: 29px;background: #df3031;}
+            .saleer2 ul li .header .saleer_buy {width:60px;height: 25px;margin: 2px 0px;background: url(img/3jx.png) no-repeat;line-height: 20px;font-size: 15px;padding-left:10px;padding-top:2px;color: #df3031;display: inline-block;  } 
+            .saleer2 ul li .header .time {width:180px;height: 25px;margin: 2px 0px;line-height: 20px;font-size: 12px;padding-left:4px;padding-top:2px;color: white;display: inline-block;  } 
+            .saleer2 .surplus {float: right;margin: 2px 0px;line-height: 20px;font-size: 12px;;padding:3px 10px 0 0;color: white}
+            .saleer2 .nav { width: 100%;height:98px;padding : 5px 0; }
+            .saleer2 .NavLeft {width: 30%;height: 98px;float: left;margin-left: 2px; }
+            .saleer2 .NavLeftImg {width: 90px;height: 90px;margin:0 auto ; border: 1px solid #eee;}
+            .saleer2 .NavLeftImg img {width: 100%;height: 100%}
+            .saleer2 .NavLeft span {width: 100%;font-weight: bold;height: 19px;text-align: left;display:block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;line-height: 20px;font-size: 10px; background-color: rgba(171, 171, 171, 0.8); background:#ababab;color: white;position: relative;z-index: 5;top: -20px;margin:0 auto;/*opacity: 0.8;*/}
+            .saleer2 .NavRight { width: 67%;height: 100px; float: right;position: relative; }
+            .saleer2 .NavRightTop{width: 100%;height: 50px;padding-top: 5px; }
+            .saleer2 .NavRightTop .tiltle {font-weight: bold;max-height: 20px;width: 95%;display: inline-block;line-height: 18px;font-size: 13px; color: black; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-bottom:0px; }
+            .saleer2 .NavRightTop .subtitle{color: #666; ;font-size: 10px;/*margin-bottom: 0px !important;position: relative; top:-8px;*/}    
+            .saleer2 .NavRightLeft {width:150px;height: 30px;float: left;/*margin-top:4px;*/}
+            .saleer2 .NavRightLeft span {font-size: 10px;color: #f50000;height: 15px;display: inline-block;width: 100%;}
+            .saleer2 .NavRightLeft span em {font-size: 18px;color: #f50000;text-align: center;}
+            .saleer2 .NavRightLeft .NavRightLeft_name {/*text-decoration: line-through*/;display: inline-block;width:auto;float: left;font-size: 10px;color: #444; height: 10px;/*position: relative;top: -3px;*/display: inline-block;width: auto;margin-right: 5px}
+            .saleer2 .NavRightLeft .received {/*text-decoration: line-through*/;display: inline-block;width:auto;float: left;font-size: 10px;color: #666; height: 10px;/*position: relative;top: -3px*/;display: inline-block;width: auto}
+            .saleer2 .NavRightRight {width:30px;height: 30px;float: left;/*background:#eee;*/  ;float:right;margin-right: 20px;border: 1px solid #f75059;top:-11px;/*position: relative;*/border-radius: 50%;    }
+            .saleer2 .NavRightRight img {width: 70%;height:70%;padding: 5px;}
+            .saleer2 .NavRightRight span {font-size: 13px;background: #f75059; ;text-align: center;width: 61px;display: inline-block;height: 24px;color: white;padding-top: 2px;font-weight: bold}
+            .saleer2 .NavRightRight p { font-size: 13px;color: #f75059;padding-top: 0px;height: 20px;width: 61px;text-align: center;background: white;font-weight: bold;margin-bottom:0px;}
+
+
+
+        </style>
+
+
+
+    <!-- 列表模板8 -->    
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板9 -->  
+        <div class="entrance">
+            <div class="entrance_type">
+                <div class="half">
+                    <span>商业连锁采购</span>
+                    <p>商业连锁采购点此进入</p>
+                </div>
+
+                <div class="half">
+                    <span>商业入驻申请</span>
+                    <p>入驻药师帮点此申请</p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <style type="text/css">
+            .entrance {box-sizing: border-box;}
+            .entrance_type {width: 95%;height: 63px;margin:0 auto;border: 1px solid #dcdcdc;border-radius: 5px; background: white; }
+            .entrance_type .half {width: 50%;height: 100%; background: url(img/jt.png)no-repeat 95% 50%;  float: left; }
+            .entrance_type .half span {font-size: 14px;color: #333;    display: block;width: 100%;text-align: center;margin-top: 18px;}
+            .entrance_type .half p {font-size: 10px;color: #777;    display:inline-block;width: 100%;text-align: center;}
+
+
+        </style>
+    <!-- 列表模板9 -->    
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板10 -->    
+
+        <div class="area">
+            <ul>
+                <li>
+                    <a class="">
+                        <div class="container">
+                            <div class="img">
+                                <img src="./img/cccc.jpg">
+                            </div>
+                            <div class="text">
+                                <div class="cooperative_title">广东广州啊打发的舒服舒服</div>
+                                <div class="cooperative_record">上架 
+                                    <span> 5068</span>种发货 
+                                    <span>610.5万</span>评价
+                                    <span>1.2万</span>条
+                                </div>
+                                <div class="discount">
+                                    <span class="bagfbb402">优惠券</span>
+                                    <p>年底答谢，低至9折</p>
+                                </div>
+                                <div class="discount">
+                                    <span class="bagfbb402">卷</span>
+                                    <p>9折，9.5折，9.8折</p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="commodity">
+                            <div class="modular">
+                                <div class="img">
+                                    <img src="./img/cccc.jpg">
+                                </div>
+                            </div>
+
+                            <div class="modular">
+                                <div class="img">
+                                    <img src="./img/cccc.jpg">
+                                </div>
+                            </div>
+
+                            <div class="modular">
+                                <div class="img">
+                                    <img src="./img/cccc.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag">
+                            <div class="mui-btn ">肺气</div>
+                            <div class="mui-btn ">肺炎</div>
+                        </div>
+                    </a>
+                </li>
+                 
+            </ul>
+        </div>  
+
+        <style type="text/css">
+            .bagfbb402 {background: #fbb402;}
+
+
+            .area {/*margin-top: 100px;*/margin-bottom: 10px;background: #eee} 
+            .area  li {background: white;padding: 5px;margin-bottom: 10px;}
+            .area .container {width: 100%;height: auto;/*padding: 5px 10px;*/border-bottom: 1px solid #dcdcdc;margin-bottom: 5px;}
+            .area .container .img {width: 35px;height: 35px;float: left;/*margin: 5px;*/}
+            .area .container img {width: 35px;height: 35px}
+            .area .container .text{width: 70%;height: auto;float: left;margin-left: 10px; }
+            .area .container .text div {float: left;}
+            .area .container .text .cooperative_title {width: 100%;height: 20px;;font-size:16px;font-weight: bold;/*margin-top: 5px;*/}
+            .area .container .text .cooperative_record {width: 100%;height: 16px;font-size: 13px;color:#999;    margin-bottom: 6px;}
+            .area .container .text .cooperative_record span {color: #df3031}
+            .area .container .text .discount {width: 100%;height:18px;}
+            .area .container .text .discount span {display:inline-block;width: auto;border-radius: 4px;padding: 0px 1px;float: left;font-size: 10px;line-height: 15px;margin-right: 5px }
+            .area .container .text .discount p {display: block;width: auto;float: left;font-size: 10px;line-height: 15px}
+            .area .commodity {width: 100%;height: 60px;margin-top: 10px;border-bottom: 1px solid #dcdcdc}
+            .area .commodity .modular {width: 33.3%;height: 100%;float: left;}
+            .area .commodity .modular .img {width: 50px;height: 50px;margin: 0 auto;}
+            .area .commodity .modular .img img {width: 100%;height: 100%; }
+            .area .commodity .modular p {color: #df3031;font-size: 10px;text-align: center;margin-top: 5px;}
+            .area .tag {margin-top: 3px;}
+            .area .tag div {width: 22.8%;margin: 2px;text-align: center;padding: 2px 0px;font-size: 14px;font-weight: 400;line-height: 1.42;position: relative;display: inline-block;cursor: pointer;transition: all;vertical-align: top;white-space: nowrap;color: #333;border: 1px solid #ccc;border-radius: 3px;border-top-left-radius: 3px;border-top-right-radius: 3px;border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;background-color: #fff;background-clip: padding-box;}
+        </style>
+
+
+
+    <!-- 列表模板10 --> 
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板11 -->
+        <div class="store_coupon">
+            <ul >
+                <li class="clear">    
+                    <span>温馨提示：</span>
+                    <p>点击领取20元抵用卷可进店使用，即可免费领取68元洁面乳</p>
+                </li>
+
+                <li class="clear">    
+                    <span>使用条件：</span>
+                    <p>无</p>
+                </li>
+            </ul>
+        </div>
+
+        <style type="text/css">
+            .store_coupon  ul {margin-top: 0px;border-bottom: 1px solid #eee;padding-bottom: 2px;}
+            .store_coupon  ul  li {width: 100%;height: auto;margin-bottom: 3px; }
+            .store_coupon  ul  li span {float: left;width: 26%;height: auto;color: #333;margin: 0px}
+            .store_coupon  ul  li p {float: left;width: 74%;height: auto;color: #888;margin: 0px}
+        </style>
+    <!-- 列表模板11 -->
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板12 -->
+         
+            <form class="form1" >
+                
+                <div   class="bd-b">
+                    <input type="text"  placeholder="用户名/Email/已认证手机"   >
+                </div>
+
+                <div   class="bd-b">
+                    <input type="password" placeholder="请填写密码"   >
+                </div>
+
+                <div style="padding:16px 0;" >
+                    <div class="btn">登 录</div>
+                </div>
+
+            </form>
+          
+        <style type="text/css">
+            .form1 {margin:0px;background:#FFFFFF;clear:both;padding:0 16px 16px 16px}
+            .form1 .bd-b {border-bottom:#D9D9D9 1px solid;width:100%;height:44px;}
+            .form1 input {outline:none;width:98%;height:44px;line-height:44px;border:none;padding:0;margin:10px 0 0 0;font-size:16px;}
+            .form1 .btn {background:#007aff;color:#FFFFFF;font-size:18px;width:100%;line-height:36px;border:none;border-radius:4px;text-align:center;}
+        </style>  
+    <!-- 列表模板12 --> 
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板13 -->
+        <form class="search_form">   
+            <ul>
+                <li>
+                    <span class="form_title"><em></em>级别：</span>
+                    <div  > 
+                        <select onchange="load_area(this.value, 1);">
+                            <option value="0">a</option>
+                            <option value="1">b</option>
+                            <option value="2">n</option>
+                            <option value="3">v</option>
+                            <option value="3245">v</option>
+                        </select>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="form_title"><em>*</em>姓名：</span><input class="fl" id="lkj" type="text" placeholder="请输入您的名字">
+                </li>
+
+                <li>
+                    <span class="form_title"><em>*</em>性别：</span>
+                    <div class="sex">
+                        <input type="radio" name="user" value="1" class="radio" checked="checked"  >先生
+                        <input type="radio" name="user" value="1" class="radio"  >女士
+
+                    </div>
+                </li>
+                <li>
+                    <span class="form_title" class="form_title"><em>*</em>出生年月</span><input class="fl" type="date" id="time"  name="" value="请选择出生年月日" />
+                </li>
+
+                <li>  <!-- 备注：地区3级联动 请参考agent.htm  -->
+                    <span class="form_title"  >选择地区:</span>
+                    <div  > 
+                        <select onchange="load_area(this.value, 1);">
+                            <option value="0">请选择</option>
+                            <option value="1">北京市</option>
+                            <option value="2">天津市</option>
+                            <option value="3">河北省</option>
+                            <option value="3245">海外</option>
+                        </select>
+                        <select onchange="load_area(this.value, 1);">
+                            <option value="0">请选择</option>
+                            <option value="1">北京市</option>
+                            <option value="2">天津市</option>
+                            <option value="3">河北省</option>
+                            <option value="3245">海外</option>
+                        </select>
+                        <select onchange="load_area(this.value, 1);">
+                            <option value="0">请选择</option>
+                            <option value="1">北京市</option>
+                            <option value="2">天津市</option>
+                            <option value="3">河北省</option>
+                            <option value="3245">海外</option>
+                        </select>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="form_title"><em></em>地址：</span><input class="fl" type="text"  name=""   />
+                </li>
+                <li>
+               
+
+                
+            </ul>
+        </form>
+
+
+        <style type="text/css">
+            .search_form {position: relative;z-index: 99 }
+            .search_form ul {background: white;margin-bottom: 5px;background: white;}
+            .search_form ul li {border-bottom: 1px solid #eee;font-size: 12px;line-height: 12px;padding: 10px;height: 19px;}
+            .search_form ul li:last-child{border-bottom:none}
+            .search_form ul li input{padding: :0px;position: relative;    height: 14px;}
+            /*.search_form ul li input[type="text"],.search_form form ul li input[type="date"]  {border: none;width: 220px; margin-left: 10px;font-size: 12px;}*/
+            .search_form ul li div {border: none;width: 230px; /*margin-left: 10px;*/float: left;height: 19px}
+            .search_form ul li em {color: red}
+            .search_form ul li .form_title {float: left;display: inline-block;width: 60px;line-height: 19px;font-size: 12px;}
+            .search_form .btn-blue {width: 80%;margin: 0 auto}
+            .search_form form ul li select {width: 70px;}
+
+        </style>    
+
+
+
+    <!-- 列表模板13 -->
+     <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板14 -->
+        <ul class="privilege">
+            <li>
+                <a href="#" target="_self">
+                    <div>
+                        <img src="../mobile/img/64_64_2.png" style="width:64px;height:64px;    margin-top: 3px;" alt="">
+                    </div>
+                    <div class="privilege_info">
+                        <p>可用</p>
+                        <p>10.00元代金券</p>
+                        <p>2016-12-22 - 2017-01-21</p>
+                    </div>
+                    <div class="money">
+                        <span></span>
+                        <span></span>
+                        <p>10.00</p>
+                     <!--    <p>满168.00用</p> -->
+                    </div>
+                </a> 
+            </li>
+            
+            <li>
+                <a href="#" target="_self">
+                    <div>
+                        <img src="../mobile/img/64_64_2.png" style="width:64px;height:64px;    margin-top: 3px;" alt="">
+                    </div>
+                    <div class="privilege_info">
+                        <p>失效</p>
+                        <p>5.00元代金券</p>
+                        <p>2016-11-29 - 2016-12-29</p>
+                    </div>
+                    <div class="money">
+                        <span></span>
+                        <span></span>
+                        <p>5.00</p>
+                        <!-- <p>满88.00用</p> -->
+                    </div>
+                </a> 
+            </li>
+        </ul> 
+
+        <style type="text/css">
+            .privilege li{width:100%; overflow:hidden; border:1px solid #ccc; border-right:none; border-left:none; padding:10px; box-sizing:border-box; background:white; margin:10px 0;}
+            .privilege li a>div{float:left;}
+
+            .privilege li .privilege_info{margin-left:10px;width: 48%}
+            .privilege li .privilege_info p{margin:5px 0 !important;}
+            .privilege li .privilege_info p:nth-of-type(2){ margin-top:2px; color:#333;display: block;width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;height: 17px;}
+            .privilege li .privilege_info p:nth-of-type(1){width:70px; background:#900; font-size:12px; color:white; line-height:18px;  border-radius:10px; text-align:center;}
+            .privilege li .privilege_info p:nth-of-type(3){font-size:12px; color:#999;display: block;width: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;height: 17px;}
+            .privilege li .money{float:right; width:80px; height:60px; background:#3ABEC0; position:relative;    margin-top: 7px;}
+            .privilege li .money span{position:absolute; width:10px; height:10px; background:white; border-radius:50%; top:50%; margin-top:-5px; left:-5px;}
+            .privilege li .money span:nth-of-type(2){left:auto; right:-5px;}
+            .privilege li .money p{color:white;line-height: 58px;text-align:center;margin: 0px;}
+            .privilege li .money p:nth-of-type(1){font-size:24px; border:1px solid #fff;}
+
+        </style>
+
+
+    <!-- 列表模板14 -->        
+     <br><br><br><br><br><br><br><br><br>
+    <!-- 列表模板15 -->  
+        <div class="header background">
+            <div class="head_portrait">
+                <img src="img/cccc.jpg">
+                <div class="edit">编辑</div>
+            </div>
+
+            <div class="datum">
+                <h4>你的名字</h4>
+                <span class="data">准会员</span>
+                <span class="data">加入时间：2015-10-10</span>
+                <span class="data"><p>经验：</p>
+                    <div class="progress">
+                        <div class="progress-in">
+                            <div class="integral_new"><span id="i1">30</span>/<span id="i2">100</span></div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+            <a href="" class="code">
+                <img src="img/64_64_1.png">
+            </a>
+
+        </div>
+
+
+        <script type="text/javascript">
+
+            $(function () {
+                var rate = (parseInt($('#i1').text()) / parseInt($('#i2').text())) * 100 + '%';  //处理头部经验百分比
+                $('.progress-in').css('width', rate);
+            });
+        </script>
+
+
+        <style type="text/css">
+            .header {height: 104px;width: 100%; position: relative;background: #007aff}
+            .header .head_portrait {width: 70px;height:70px;float: left;margin: 17px;overflow: hidden;position: relative;}
+            .header .head_portrait img {width: 64px;height: 64px;border-radius: 100%;border: 3px solid #1e9854;}
+            .header .head_portrait .edit {background:#f6ac00;width: 28px;height: 14px;position: absolute;bottom: 0px;right: 0px;font-size: 13px;line-height: 13px;border-radius: 2px;    padding-left: 2px;color: white;font-family: KaiTi;} 
+            .header .code {position: absolute;top:25px;right: 30px;display: inline-block;width: 23px;height: 23px;}
+            .header .code img {width: 100%;height: 100%;}
+
+            .header  .datum {width: 50%;height: 64px;float: left;margin-top: 12px}
+            .header  .datum h4 {margin: 0px;color: white;font-size: 15px;margin-bottom: 5px;}
+            .header  .datum .data {display: block;width: 100%;color: white;font-size: 12px;}
+            .header  .datum .data p {display: block;float: left;margin: 0;}
+
+
+        </style>
+
+
+        
+    <!-- 列表模板15 --> 
+    
+
+
+    <br><br><br><br><br><br><br><br><br>
+
+
+
+    <!-- 列表模板16 -->  
+        <div class="near_list">
+            <ul>
+                <li class="clear">
+                    <div class="list_img">
+                        <img src="../mobile/img/fdsgds.jpg">
+                    </div>
+                    <div class="list_data">
+                        <span>这个是店名字店 </span>
+                        <span>广州&nbsp|&nbsp 广州市白云区巨神峰开朗16号601</span>
+                        <span>电话&nbsp|&nbsp<p>12345678910</p>,<p>12345678910</p></span>
+                        <span>距离&nbsp|&nbsp 10千米</span>
+                    </div>
+                </li>
+
+                <li class="clear">
+                    <div class="list_img">
+                        <img src="../mobile/img/fdsgds.jpg">
+                    </div>
+                    <div class="list_data">
+                        <span>这个是店名字店 </span>
+                        <span>广州&nbsp|&nbsp 广州市白云区巨神峰开朗16号601</span>
+                        <span>电话&nbsp|&nbsp<p>12345678910</p>,<p>12345678910</p></span>
+                        <span>距离&nbsp|&nbsp 10千米</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <style type="text/css">
+            .near_list {background: white;}
+            .near_list ul{}
+            .near_list ul li{padding: 8px 10px;border: 1px solid #eee;}
+            .near_list ul li .list_img{width: 60px;height: 60px;float: left;margin-top: 7px;}
+            .near_list ul li .list_img img{width: 100%;height: 100%}
+            .near_list ul li .list_data {width:calc(100% - 70px);height: auto;float: left;margin-left: 10px;}
+            .near_list ul li .list_data span  {display: block;width: 100%;font-size: 12px;font-weight: 400;margin-bottom: 3px;}
+            .near_list ul li .list_data span p  {display: inline-block;width:auto;margin: 0}
+
+        </style>
+
+    <!-- 列表模板16 --> 
+
+     <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板17 -->
+        <div class="lattice_4 clear">
+            <ul>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_13.png">
+                        </div>
+                        <span>会员特权</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_2.png">
+                        </div>
+                        <span>优惠卷</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_15.png">
+                        </div>
+                        <span>收货地址</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_9.png">
+                        </div>
+                        <span>我的收藏</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_13.png">
+                        </div>
+                        <span>会员特权</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_2.png">
+                        </div>
+                        <span>优惠卷</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_15.png">
+                        </div>
+                        <span>收货地址</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_9.png">
+                        </div>
+                        <span>我的收藏</span>
+                    </a>
+                </li>
+                
+               
+            </ul>
+        </div>
+
+        <style type="text/css">
+            .lattice_4 {background: white;margin-top: 10px;}
+            .lattice_4 ul {border-top: 1px solid #dcdcdc;}
+            .lattice_4 li {width: 24.75%;height: 87px;float: left;border-bottom: 1px solid #dcdcdc;border-right: 1px solid #dcdcdc}
+            .lattice_4 li:nth-child(4n){border-right:none}
+            .lattice_4 li div {width: 35px;height: 35px;margin: 0 auto;margin-top: 17px;margin-bottom: 8px;}
+            .lattice_4 li div img {width: 35px;height: 35px;}
+            .lattice_4 li span {display: block;width: 100%;text-align: center;font-size: 10px;}
+
+
+
+        </style>
+
+
+    <!-- 列表模板17 -->  
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板18 -->  
+
+
+        <div class="commodity_category">
+            <ul class="category clear">
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_13.png">
+                        </div>
+                        <span>阿萨达系列</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_2.png">
+                        </div>
+                        <span>优惠卷系列</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_15.png">
+                        </div>
+                        <span>收址系列</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_9.png">
+                        </div>
+                        <span>我的收藏</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_16.png">
+                        </div>
+                        <span>我的礼包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="../mobile/img/69_69_1.png">
+                        </div>
+                        <span>附近门店</span>
+                    </a>
+                </li>
+              
+                                      
+               
+            </ul>
+        </div>
+
+
+        <style type="text/css">
+            .commodity_category {background: white;border-top: 1px solid #dcdcdc;}
+            .commodity_category li {width: 33%;height: 95px;float: left;border-bottom: 1px solid #dcdcdc;border-right: 1px solid #dcdcdc;background: white;}
+            .commodity_category li:nth-child(3n){border-right:none}
+            .commodity_category li div {width: 50px;height: 50px;margin: 0 auto;margin-top: 17px;margin-bottom: 8px;}
+            .commodity_category li div img {width: 50px;height: 50px;}
+            .commodity_category li span {display: block;width: 100%;text-align: center;font-size: 10px;}
+
+
+
+        </style>
+
+    <!-- 列表模板18 -->  
+
+
+ 
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板19 -->  
+
+        <div class="order_catalog">
+            <p class="order_catalog_title">
+                我的订单 <a href="" class="fr">查看全部 <em>&gt;</em></a>
+            </p>
+
+            <div class="cui-order-case clear cui-margin-bottom">
+                <a href="">
+                    <img src="http://fwh.wx.cuci.cc/static/wap/images/order-icon01.png" alt="">
+                    <p>待付款</p>
+                    <div class="dot none"></div>
+                </a>
+                <a href="">
+                    <img src="http://fwh.wx.cuci.cc/static/wap/images/order-icon02.png" alt="">
+                    <p>待发货</p>
+                    <div class="dot none"></div>
+                </a>
+                <a href="">
+                    <img src="http://fwh.wx.cuci.cc/static/wap/images/order-icon03.png" alt="">
+                    <p>待收货</p>
+                    <div class="dot none"></div>
+                </a>
+                <a href="">
+                    <img src="http://fwh.wx.cuci.cc/static/wap/images/order-icon04.png" alt="">
+                    <p>待评价</p>
+                </a>
+                <a href="">
+                    <img src="http://fwh.wx.cuci.cc/static/wap/images/order-icon05.png" alt="">
+                    <p>退换货</p>
+                </a>
+             </div>
+
+        </div>   
+        <style type="text/css">
+            .order_catalog_title{ font-size: .66rem; color:#4e4e4e; padding:0 .75rem; line-height: 2.57rem; background:#fff; border-bottom: 1px solid #ececec;margin: 0px;margin-top: 10px;}
+            .order_catalog_title a{ color:#8b8b8b;}
+            .order_catalog_title a em{ font-family: 'simhei simsun';}
+            .cui-margin-bottom{ margin-bottom: .6rem !important;}
+
+            .cui-order-case{ padding:.75rem 0; background:#fff;}
+            .cui-order-case a{ float:left; width:20%; text-align: center; position:relative;}
+            .cui-order-case a img{ width:2rem; height:auto; background-size: 100%;}
+            .cui-order-case a p{ font-size: .6rem; color:#5a5a5a;margin: 0px}
+            .cui-order-case a .dot {position: absolute;width: 10px;height: 10px;background: red;border-radius: 100%;top: 2px;right: 23%;}
+            .cui-order-case a span{display:inline-block; width:.78rem; height:.78rem; border-radius: 50%; background:#f82222; text-align: center; line-height: .78rem; font-size: .6rem; color:#fff; position:absolute; top: -.2rem; left:50%; margin-left: .2rem; }
+
+        </style>
+
+
+    <!-- 列表模板19 --> 
+
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板20 --> 
+        <section class="info background clear ">
+            <div>
+                <p>保证金</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>保证金</p>
+                <p>0</p>
+            </div>
+            <div>
+                <p>保证金</p>
+                <p>0</p>
+            </div>
+        </section>
+
+
+        <style type="text/css">
+
+            .info{box-sizing:border-box; height:auto;/*padding:20px 0;*/background: blue;    padding: 16px 0px;}
+            .info div{float:left; width:33%;  border-right: 1px solid #fff;}
+            .info div:last-child{ border-right:none;}
+            .info div p{color:white; font-size:16px; text-align:center; margin:0;}
+            .info div p:nth-of-type(2){font-size:24px; text-align:center;}
+            .info a{float:left; width:20%; height:40px; border-radius:5px; margin-top:10px; margin-left:30px; border:1px solid #ccc; text-align:center; line-height:40px; background:#fff; color:black;}
+
+
+        </style>
+
+
+
+    <!-- 列表模板20 --> 
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板21 -->
+
+            <div class="bond">
+                <div class="bond_data">
+                    <ul class="clear">
+                        <li>    
+                            <span>保证金额:</span><p>5000元</p>
+                        </li>
+                        <li>    
+                            <span>提交时间:</span><p>2016-12-24 12:50:40</p>
+                        </li>
+                        <li>    
+                            <span>状态:</span><p>通过未通过</p>
+                        </li>
+                        <li>    
+                            <span>保证金凭证:</span><img src="./img/big.jpg">
+                        </li>
+                         
+                    </ul>
+
+                    <ul class="clear">
+                        <li>    
+                            <span>保证金额:</span><p>5000元</p>
+                        </li>
+                        <li>    
+                            <span>提交时间:</span><p>2016-12-24 12:50:40</p>
+                        </li>
+                        <li>    
+                            <span>状态:</span><p>通过未通过</p>
+                        </li>
+                        <li>    
+                            <span>保证金凭证:</span><img src="./img/big.jpg">
+                        </li>
+                        
+                    </ul>
+                </div>                
+            </div>
+
+            <div class="bond_add">
+                <a href="">
+                    <span>添加保证金</span>   
+                </a>
+            </div>
+
+            <style type="text/css">
+
+                .bond .bond_data {width: 100%;height: auto;background: white;}
+                .bond .bond_data  ul{padding: 8px 0px;border-bottom: 1px solid #dcdcdc;width: 95%;margin: 0 auto}
+                .bond .bond_data  ul li{height: 27px;width: 100%;}
+                .bond .bond_data  ul li span {float: left;text-align:right;width: 32%;font-size: 14px;}
+                .bond .bond_data  ul li p {float: left;text-align:left;width: 60%;font-size: 14px;margin: 0px;padding-left: 10px;}
+                .bond .bond_data  ul li img {float: left;text-align:left;width: 60%;/*font-size: 14px;margin: 0px;*/padding-left: 10px;}
+                .bond_add {/*position:fixed;bottom: 0px;left: 0px;right: 0px;*/background: white;text-align: center;padding: 10px; }
+                .bond_add a  {display: inline-block;width: 100%;height: 100%;}
+                .bond_add a  span { color:#666;font-size: 14px;background: url(img/64_64_122.png) no-repeat left center;padding-left: 20px;font-weight: bold;background-size: 16px;}
+
+
+
+            </style>
+
+    <!-- 列表模板21 -->
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板22 -->
+        <div class="list-img list-address"  style="padding:0 8px;height: 48px ;border: 1px solid #dcdcdc;">
+            <div class="add_addressee fl">收货人：姚金华</div>
+
+            <div class="add_recipient  fl">
+                <span>联系方式：18819493488</span>
+                <span>收货地址：广东广州市花都区永利路88号</span>
+            </div>
+        </div>
+
+
+        <style type="text/css">
+            .add_addressee {width: 34%;margin-top:14px;margin-right: 1%;background: url(img/buy_cart.png) no-repeat;background-size: 20px 20px;padding-left:25px;line-height: 20px !important;height: 30px !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;} 
+            .add_recipient {width: 56%;height: 32px !important;margin: 8px 0;background: url(img/jt.png) no-repeat center right;background-size: 10px 15px;}
+            .add_recipient span {display: inline-block;width: 90%;height: 15px;line-height: 15px;font-size: 12px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+
+
+
+        </style>
+
+    <!-- 列表模板22 -->
+
+    <br><br><br><br><br><br><br><br><br>
+    <!-- 列表模板23 -->
+        <section class="info_list">
+            <ul> 
+                <li>
+                    <div>
+                        <a href="/mobile/plugin.php?fromid=1&amp;action=plug_team_info&amp;id=260589" target="_self">
+                            <img src="http://www.99kangmei.com/api/avatar/default.jpg" onerror="this.src='/api/avatar/default.jpg';">
+                            <div class="info_in">
+                                <span>昵称 ：小明  </span>
+                                <p>ID:260589 </p>
+                                <p>登入名：260589</p>
+                                <p>消费: <em>0</em> 元&nbsp;</p>
+                                <p>粉丝：<em>0 </em>位</p>
+                                <p>注册时间：2017-01-09 18:17:26</p>
+                            </div>
+                            <div class="level">
+                               <div class="level_3">金</div>                   
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <style type="text/css">
+            .info_list {width:100%; height:auto; overflow:hidden; box-sizing:border-box; margin-top:10px; border:none !important; padding:0 !important;}
+            .info_list ul li {overflow: hidden; padding:5px; }
+            .info_list ul li>div{border: 1px solid #ccc; overflow: hidden; ; padding:5px; box-sizing: border-box; background: white;}
+            .info_list ul li>div a {width:100%;display: inline-block;}
+            .info_list ul li>div>a>img{float: left;width: 100px;margin: 9px 6px 8px 8px;}
+            .info_list ul li .info_in{margin-left:10px; float: left; width:50%;}
+            .info_list ul li .info_in span {font-size: 14px;color: #666;margin-bottom: 5px;margin-top: 7px;}
+            .info_list ul li .info_in p{margin:0;    font-size: 10px;line-height: 18px;color: 2#999;}
+            .info_list ul li .info_in p em {color: #e51a4b;margin: 0 3px;}
+            .info_list ul li .info_in p:last-of-type{margin:0; border: none;}
+            .info_list ul li .info_in p:last-of-type a{margin:0 10px; border:1px solid #ccc; padding: 5px; border-radius: 3px; background: white;}
+            .info_list ul li .level {width: 30px;float: right;margin: 6px 8px 15px 4px;}
+            .info_list ul li .level div {border-radius: 100%;width: 30px;height: 30px;color: white;font-size: 20px;/*padding-top: 7px;padding-left:5px;*/    line-height: 30px;
+        text-align: center;}
+            .info_list ul li .level .level_1 {background: #ffba36;}
+            .info_list ul li .level .level_2 {background: #d2d2d2}
+            .info_list ul li .level .level_3 {background: #ff748f;}
+            .info_list ul li .level .level_4 {background: #f5ab8e;}
+            .info_list ul li .level .level_5 {background: #e4cc9e;}
+
+        </style>
+
+
+
+
+    <!-- 列表模板23 -->
+
+    <br><br><br><br><br><br><br><br><br>
+    <!-- 列表模板24 -->
+
+        <section class="face_list m0">
+            <ul>
+                <li>
+                    <div>
+                        <a href="/mobile/plugin.php?fromid=322&amp;action=plug_team_info&amp;id=322">
+                            <img src="http://e.wx166.com/api/avatar/default.jpg" onerror="this.src='/api/avatar/default.jpg';"></a>
+                        <a href="/mobile/plugin.php?fromid=322&amp;action=plug_team&amp;id=322">
+                            <div class="info_in">
+                                <p>猫ID:322[普通会员]</p>
+                                <p>姓名:姚盯</p>
+                                <p>累计消费:0元&nbsp;M1数量:
+                                    <font color="#FF0000">1</font></p>
+                                <p>注册时间：2016-12-06 17:46:03</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <style type="text/css">
+            .face_list {width:100%; height:auto; overflow:hidden; box-sizing:border-box; margin-top:20px; border:none !important; padding:0 !important;background: white}
+            .face_list ul li {overflow: hidden; padding:10px; }
+            .face_list ul li>div{border: 1px solid #ccc; overflow: hidden;border-radius: 5px; padding:5px; box-sizing: border-box; background: #EFEFEF;}
+            .face_list ul li>div>a>img{float: left; width:100px;}
+            .face_list ul li .info_in{margin-left:10px; float: left; width:60%;}
+            .face_list ul li .info_in p{margin:0; margin-bottom:9px; border-bottom: 1px solid #ccc; font-size: 12px;line-height: 18px;}
+            .face_list ul li .info_in p:last-of-type{margin:0; border: none;}
+            .face_list ul li .info_in p:last-of-type a{margin:0 10px; border:1px solid #ccc; padding: 5px; border-radius: 3px; background: white;}
+        </style>
+    <!-- 列表模板24 -->
+
+
+    <br><br><br><br><br><br><br><br><br>
+    <!-- 列表模板25 -->
+        <div class="foot-bar-fix"></div>
+            <div class="foot-bar1">
+
+                <div class="text">
+                    <ul>
+                        <li class="default1" style="width:20%;" >
+                            <a href="" target="_self">
+                                <span>首页</span>
+                            </a>
+                        </li>
+
+                        <li class="default2" style="width:20%;" >
+                            <a href="" target="_self">
+                                <span>商品</span>
+                            </a>
+                        </li>
+                        <li class="default5" style="width:20%;" >
+                            <a href="" target="_self">
+                                <div class="abc">
+                                    <div class="round"><span id="cart_num">11</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="default3-on" style="width:20%;" >
+                            <a href="" target="_self">
+                                <span>订单</span>
+                            </a>
+                        </li>
+                        
+                        <li class="default4-on" style="width:20%;" >
+                            <a href="" target="_self">
+                                <span>我的</span>
+                            </a>
+                        </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <style type="text/css">
+            .foot-bar-fix {height:50px;clear:both;}
+
+            .foot-bar1 .icon-home span,.foot-bar .icon-channel span,.foot-bar .icon-my span,.foot-bar .icon-qian span,.foot-bar .icon-more span,.foot-bar .icon-gouwuche span,.foot-bar .icon-fenlei span {color:#5d5f6a;}
+            .foot-bar1 .icon-home-on span,.foot-bar .icon-my-on span,.foot-bar .icon-channel-on span,.foot-bar .icon-qian-on span,.foot-bar .icon-more-on span,.foot-bar .icon-gouwuche-on span,.foot-bar .icon-fenlei-on span {color:#007aff}
+            .foot-bar1 {width:100%;height:48px;/*overflow:hidden*/;background:#fff;border-top:#dcdcdc 1px solid;/*position:fixed;z-index:9;bottom:0;*/min-width:320px; max-width:640px;}
+            .foot-bar1 .iconfont {height: 35px;}
+            .foot-bar1 .iconfont img{width:22px; height: auto; display: inline-block;margin-top: 4px;}
+            .foot-bar1 .text {/*margin-top: 14px*/;border-top:#dcdcdc 1px solid}
+            .foot-bar1 .text ul {height: 48px;background:white; }
+            .foot-bar1 .text ul li a{display: block;padding-top: 24px;}
+            .foot-bar1 .text ul li {width:20%;height:48px;float:left;text-align:center;font-size:10px; padding-top:3px; box-sizing:border-box;position: relative;}
+            .foot-bar1 .text ul li span{margin-top:4px;color: #999;}
+            .foot-bar1 .text ul li .abc {width: auto;height: auto;/* background: #F5F5F5; */position: absolute;top: -11px;right: 8px;}
+            .foot-bar1 .text ul li .shopcart {height: 57px;width: 56px;}
+            .foot-bar1 .text ul li .round {background: red;width: 20px;height: 20px;position: absolute;top: 22px;right: 5px;border-radius: 100%;}
+            .foot-bar1 .text ul li .round  span  {position: relative;top: 3px;color: white !important;margin:0px !important;}
+            .foot-bar1 span {display:block;/*padding-top:32px;*/}
+            .foot-bar1 em {font-style:normal;font-size:10px;position:relative;z-index:10;display:block;width:5px;height:5px;left:50%;margin:-38px 0 0 8px;background:#FF0000;border:1px solid #F43531;border-radius:5px;}
+
+            /*默认主题*/
+            .foot-bar1 .default1{background: url('img/iconfont-shouye1.png') no-repeat center 3px;background-size:24px 24px;}
+            .foot-bar1 .default2{background:url('img/sp1.png') no-repeat center 5px;background-size:24px 24px;}
+            .foot-bar1 .default3{background:url('img/icon-my1.png') no-repeat center 5px;background-size:24px 24px;}
+            .foot-bar1 .default4{background:url('img/iconfont-wode2.png') no-repeat center 5px;background-size:24px 24px;}
+            .foot-bar1 .default5{background: url('img/10_34.png') no-repeat center -1px;background-size: 60px 60px;}
+            .foot-bar1 .default1-on{background: url('img/iconfont-shouye(1).png') no-repeat center 3px;background-size:24px 24px;}
+            .foot-bar1 .default2-on{background:url('img/sp2.png') no-repeat center 5px;background-size:24px 24px;}
+            .foot-bar1 .default3-on{background:url('img/icon-my2.png') no-repeat center 5px;background-size:24px 24px;}
+            .foot-bar1 .default4-on{background:url('img/icon-member.png') no-repeat center 5px;background-size:28px 28px;}
+            .foot-bar1 .default5 {position: relative;top:-14px;height: 60px !important}
+            .foot-bar1 .default5 a {    padding-top: 0px!important;;display:inline-block;width: 100%;height: 100%}
+            .foot-bar1 .default1-on span {color:#007aff !important;}
+            .foot-bar1 .default2-on span {color:#007aff !important;}
+            .foot-bar1 .default3-on span {color:#007aff !important;}
+            .foot-bar1 .default4-on span {color:#007aff !important;}
+
+
+        </style>
+
+    <!-- 列表模板25 -->
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板26 -->
+        <section class="search1 background">
+            <div class="img"  >
+                <img src="http://statics.s1.y01.cn/1.0/mobile/img/share-qzone.png"></div>
+            <div class="search_rignavht">
+                <form action="search.php" method="post" id="dform">
+                    <input type="hidden" name="ok" value="1">
+                    <input type="hidden" name="action" value="mod16">
+                    <input type="hidden" name="fromid" value="3">
+                    <input type="text" name="wd" id="wd" placeholder="根据旁边图片是否存在自适应宽度搜索栏"></form>
+            </div>
+            <div class="img"  >
+                <img src="http://statics.s1.y01.cn/1.0/mobile/img/my-cart.png"></div>
+        </section>
+
+
+
+        <style type="text/css">
+            .search1 {width: 100%;height: 40px; background: #007aff;padding-top: 5px;/* padding-left: 5%; */box-sizing: border-box;position: relative;}
+            .search1>div input {background: url(img/search_03.png) no-repeat 12px center;background-size: 16px 16px;padding-left: 36px;box-sizing: border-box;width: 75%;line-height: 25px;color: #333;border: none;font-size: 15px;}
+            .search1>div a {width: 10%;line-height: 30px;text-align: center;color: #fff;font-size: 16px;position: absolute;left: 83%;}
+            .search1>img {height: 30px;width: auto;float: left;}
+            .search1 .search_rignavht {/* float: left; */width: 92%;height: 25px;border: 1px solid #fff;border-radius: 5px;/* margin-left: 1em; */overflow: hidden;background: #fff;margin: 0 auto;margin-top: 2px;}
+            .search1 { display:-webkit-box;}
+            .search1 .img {width: 30px;height: 30px; }
+            .search1 .img:first-child{margin-left: 10px;}
+            .search1 .img:last-child{margin-right: 10px;}
+            .search1 .img img {width: 100%;height: 100%;}
+            .search1 .search_rignavht {-webkit-box-flex:1;}
+
+
+
+        </style>
+    <!-- 列表模板26 -->
+
+
+     
+    <br><br><br><br><br><br><br><br><br>
+    <!-- 列表模板27 -->
+
+
+        <div class="message_board">    
+            <ul>
+                <li class="clear">
+                    <div class="pic">
+                        <img class="" src="../mobile/img/big.jpg">
+                        <p>留言者A</p>
+                    </div>
+
+                    <div class="interlocution">
+                        <div class="question">
+                            <p>
+                                <!-- <span>留言者A：</span>  -->8月2日下单，3日收货，4日带出去旅拍 ，10日来评价。让老板久等啦!其实，收藏这款宝贝已经有段时间了，考虑到价钱有些高一直没下手，直到决定出去旅行才下单，时间特别仓促，因此老板帮我发了顺丰快递，在我旅行前收到了，特别感谢!之后，在旅行的过程中，一直和店里保持联系，咨询使用方法，老板都很耐心!在旅行中不小心丢失了广角镜头，老板又帮我联系厂家补发镜头，让我觉得特别感动!总体感觉，这是一家值得信赖的店铺!产品很赞，旅拍一路都在用 ，拍了很多精致的照片，喜欢的不得了。不多说了，看照片就知道啦!
+                            </p>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                <span>[客服A：]</span>亲，它的效果还是很不错的，设计又很逼格，在美国获多项奖项的。但它毕竟是手机特效镜头，如果想追求单反的效果，还得用单反镜头，但是单反的价格跟它是不能相提并论的。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                
+            </ul>
+        </div>
+
+        <style type="text/css">
+            .message_board {background: white;}
+            .message_board ul{padding: 10px;border-bottom: 1px solid #dcdcdc;}
+            .message_board ul li {border-bottom: 1px solid #dcdcdc;margin-top: 5px; font-size: 10px;}
+            .message_board ul li:last-child{border-bottom:none}
+            .message_board ul li .pic {width: 50px;height: 50px;float: left;margin-top: 5px;font-size: 10px;}
+            .message_board ul li .pic img {width:100%;height: 100%;border-radius: 100%}
+            .message_board ul li .pic p {margin: 0px;text-align: center;overflow: hidden;}
+            .message_board ul li .interlocution {float: left;width:calc(100% - 80px);margin-left: 15px;}
+            .message_board ul li .interlocution .question{color: #333;margin: 20px 0;line-height: 15px;}
+            .message_board ul li .interlocution .answer{color: #BD7F00;margin: 20px 0;line-height: 15px;}
+            .message_board ul li .interlocution .answer span {color:#666;}
+
+        </style>
+    <!-- 列表模板27 -->
+    
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- 列表模板28 -->
+         
+        <ul>
+            <li class="list-img" style="background-color: rgb(255, 255, 255);">
+                <a href="">
+                    <img src="http://e.wx166.com/file/upload/201612/15/17414211209.jpg.thumb.jpg" width="60" height="60" alt="" onerror=";">
+                    <div>
+                        <strong>公司门店名字</strong>
+                    </div>
+
+                    <div class="price">交易额：￥0.01</div>
+                    
+                    <div>
+                        <span>会员数：100</span> <span>商品数：1000</span>
+                    </div>
+                     <div>
+                        <span>会员数：100</span> <span>商品数：1000</span>
+                    </div>
+                     <div>
+                        <span>会员数：100</span> <span>商品数：1000</span>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="list-img" style="background-color: rgb(255, 255, 255);">
+                <a href="">
+                    <img src="http://e.wx166.com/file/upload/201612/15/17414211209.jpg.thumb.jpg" width="60" height="60" alt="" onerror=";">
+                    <div>
+                        <strong>公司门店名字</strong>
+                    </div>
+
+                    <div class="price">交易额：￥0.01</div>
+                    
+                    <div>
+                        <span>会员数：100</span> <span>商品数：1000</span>
+                    </div>
+                     <div>
+                        <span>会员数：100</span> <span>商品数：1000</span>
+                    </div>
+                     <div>
+                        <span>会员数：100</span> <span>商品数：1000</span>
+                    </div>
+
+                </a>
+            </li>
+
+        </ul>
+           
+           
+
+
+        <style type="text/css">
+
+            .list-img {height:auto;background:#FFFFFF;overflow:hidden;clear:both;border-bottom:#D9D9D9 1px solid;padding:0 10px;}
+            .list-img img {float:left;margin: 1px 10px 20px 0;;}
+            /*.list-img ul {margin:10px 0 0 0;}*/
+            .list-img div {height:20px;line-height:20px;overflow:hidden;}
+            .list-img strong {font-size:16px;display:block;width:100%;font-weight:normal;}
+            .list-img em {font-size:12px;color:#666666;font-style:normal;}
+            .list-img span {font-size:12px;color:#666666;}
+            .list-img .price {font-size:12px;color:#FF0000;}
+            .list-img .vip {background:url('img/icon-vip.png') no-repeat 0 center;background-size:14px 14px;padding-left:15px;}
+
+
+        </style>
+    <!-- 列表模板28 -->
+
+    <br><br><br><br><br><br><br><br><br>    
+            
+
+    <!-- 列表模板29 -->
+        <form class="textarea">
+
+            <div class="" style="margin: 5px 5px;">
+                <textarea id="textarea" rows="5" placeholder="请在此处输入你对我们的建议看法~"></textarea>
+            </div>
+
+            
+             
+            <div style="padding:16px 0;"  >
+                <div class="btn-blue background" name="">提交</div>
+            </div>
+        </form>
+
+
+
+        <style type="text/css">
+            .textarea {width: 80%;margin: 0 auto;margin-top: 20px;}
+            .textarea textarea{width: 100%;resize: none}
+            .textarea .btn-blue {color: #FFFFFF;font-size: 18px;width: 100%;line-height: 36px;border: none;border-radius: 4px;text-align: center;background: #1e9854 !important;}
+
+
+
+        </style>
+
+    <!-- 列表模板29 -->
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板30 -->
+        <div class="contact">
+            <span>代理商：阿斯蒂</span>
+            <span>联系电话：<p>12345678910</p></span>
+
+            <div class="code">
+                <img src="./img/big.jpg">
+                
+            </div>
+            <p class="ps">扫一扫关注微信</p>
+        </div>
+
+        <style type="text/css">
+            .contact {background: white;margin-top: 10px;width: 100%;height: auto;padding-top: 20px;margin-bottom: 10px;padding-bottom: 20px;}
+            .contact span{text-align: center;display: inline-block;width: 100%;font-weight: bold;color: #555;padding-bottom: 9px;}  
+            .contact span p{ display: inline-block;width:auto;font-weight: bold;color: red} 
+            .contact .code {width:120px;height: 120px;margin: 0 auto; margin-top: 10px;}
+            .contact .code img {width: 100%;height: 100%;}
+            .contact .ps {color: #999;text-align: center;width: 100%;display: inline-block;text-align: center;font-size: 8px;margin-top: 15px;}
+        </style>
+    <!-- 列表模板30 -->     
+
+
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板31 -->   
+        <div class="shipment_state">
+            <ul>
+                <li class="clear">
+                    <span>物流码数量：</span><p>0</p> <span>产品数量:</span><p>0</p>
+                </li>
+
+                <li>物流码：12345567</li>
+                <li>产品：阿萨大大大大撒打算</li>
+                <li>物流码：12345567123231</li>
+
+            </ul>
+
+        </div>
+
+        <style type="text/css">
+            .shipment_state {background: white;padding: 10px 18px;}
+            .shipment_state  li {color: #666;margin-bottom: 10px;}
+            .shipment_state  li span {font-weight: bold;color: black;;display: block;width:92px;float: left; }
+            .shipment_state  li p {color: red;display:inline-block;width:50px;text-align: center; float: left;margin: 0px;}
+
+
+        </style>
+
+
+    <!-- 列表模板31 -->   
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板32 --> 
+        <div class="sele_4 mt10">
+            <ul>
+                <li class="cur">
+                    <a target="_self" href=" ">销量
+                        <div>
+                            <img src="img/iconfont-arrow_top.png">
+                            <img src="img/iconfont-arrow.png">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href=" ">库存
+                        <div>
+                            <img src="img/iconfont-arrow_top.png">
+                            <img src="img/iconfont-arrow_ren.png">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href=" ">价格
+                        <div>
+                            <img src="img/iconfont-arrow_red.png">
+                            <img src="img/iconfont-arrow.png">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href=" "> 时间 
+                        <div>
+                            <img src="img/iconfont-arrow_top.png">
+                            <img src="img/iconfont-arrow.png">
+                        </div>
+                    </a>
+                </li>
+                
+          </ul>
+        </div>
+
+
+        <style type="text/css">
+            .sele_4{padding: 5px 0;background: white;line-height: 30px;box-sizing: border-box;border-bottom: 1px solid #ccc;}
+            .sele_4 ul{overflow: hidden;}
+            .sele_4 ul li{float: left; width: 25%; text-align: center; border-right: 1px solid #ccc; box-sizing: border-box; position: relative}
+            .sele_4 ul li:last-child{border-right:none}
+            .sele_4 ul li.cur a{color: red;}
+            .sele_4 ul li div{display: inline-block;margin: 0;margin-bottom: -6px;width: 10px;height: 20px !important;overflow: hidden;position: relative;top: -2px;}
+            .sele_4 ul li a{font-size: 13px;}
+            .sele_4 ul li div img{width: 10px;}
+            .sele_4 ul li div img:nth-of-type(1){position: absolute;top: 0px;left: 0}
+            .sele_4 ul li div img:nth-of-type(2){position: absolute;bottom: 0px;left: 0}
+
+
+
+
+        </style>
+
+
+
+    <!-- 列表模板32 --> 
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板33 --> 
+        <center>
+          
+          <div style="margin-top:18px">
+            <form method="post" action="http://e.wx166.com/api/code.php" id="sform">
+              <input type="text" name="c" style="padding:8px; width:50%; margin:5px;border-radius:5px" placeholder="输入产品条码查询">
+              <span type="submit" class="bt"   style="border-radius:5px">提交查询</span></form>
+          </div>
+        </center>
+
+        <style type="text/css">
+            .bt {width: 15%;padding: 8px;background: #E67817;color: #ffffff;}
+        </style>
+
+
+    <!-- 列表模板33 --> 
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板34 --> 
+        <div class="illness_list">  
+                <ul>
+                    <li class="clear">
+                        <div class="fl img">
+                            <a href="">
+                                <div>
+                                    <img src="img/sc.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="fl warpper ">
+                            <a href="">
+                                <h4>[牌子]阿斯蒂阿斯蒂斯蒂阿斯蒂芬斯蒂阿斯蒂芬芬是芬是</h4>
+
+                                <div class="text">
+                                    安静的咖啡骄傲的匮乏健康的楼大家是否将阿斯兰；空间；撒娇疯狂拉升阿达
+                                </div>
+
+                                <p class="specifications">1.5mlx12片x15盒</p>
+                            </a>
+                            <div class="price">
+                                <p>￥300.00</p>
+                                <span>30000人采购</span>
+                                <img src="img/gwc.png">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="clear">
+                        <div class="fl img">
+                            <a href="">
+                                <div>
+                                    <img src="img/sc.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="fl warpper ">
+                            <a href="">
+                                <h4>[牌子]阿斯蒂阿斯蒂斯蒂阿斯蒂芬斯蒂阿斯蒂芬芬是芬是</h4>
+
+                                <div class="text">
+                                    安静的咖啡骄傲的匮乏健康的楼大家是否将阿斯兰；空间；撒娇疯狂拉升阿达
+                                </div>
+
+                                <p class="specifications">1.5mlx12片x15盒</p>
+                            </a>
+                            <div class="price">
+                                <p>￥300.00</p>
+                                <span>30000人采购</span>
+                                <img src="img/gwc.png">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <style type="text/css">
+                .illness_list  {margin-top: 15px;background: white;}
+                .illness_list .more{   ;font-size: 14px;line-height: 15px}
+                .illness_list .more span {margin-right: 13px;font-size: 12px;}     
+                .illness_list ul li {width: 100%;height: 110px;border-top: 1px solid #eee; }
+                .illness_list ul li .img {width: 31%;height: 110px;border-right: 1px solid #eee;}
+                .illness_list ul li .img a {width: 100%;height: 100%}
+                .illness_list ul li .img div { width: 94px;height: 94px;margin:10px  auto;}
+                .illness_list ul li .img div img {width: 100%;height: 100%}
+                .illness_list ul li .warpper {width: 62%;height: auto;margin-left: 10px }
+                .illness_list ul li .warpper  h4{margin-top: 7px;overflow: hidden;height: 18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis}
+                .illness_list ul li .warpper  .text {font-size: 12px;color: #999;line-height: 17px;height: 34px;margin-bottom: 7px;overflow: hidden;}
+                .illness_list ul li .warpper .specifications {font-size: 10px;color: #777;line-height: 15px;margin-bottom:0 !important;margin-top: 3px;}
+                .illness_list ul li .warpper .price {height: 22px;width: 100%;margin-top: 1px;}
+                .illness_list ul li .warpper .price p  {color: #ff5500;display: inline-block;font-size: 16px;margin-right: 20px;} 
+                .illness_list ul li .warpper .price span  { display: inline-block;font-size: 12px;color: #999} 
+                .illness_list ul li .warpper .price img {height: 22px;width: 22px;float: right;}
+
+
+
+
+            </style>
+    <!-- 列表模板34 -->       
+    <br><br><br><br><br><br><br><br><br>    
+
+
+    <!-- 列表模板35 -->       
+        <div class="status_manage_list">    
+            <ul>
+                <li class="clear">
+                    <a href="">
+                        <div class="fl img">
+                            <div>
+                                <img src="./img/index/sc.png">
+                            </div>
+                        </div>
+                        <div class="fl warpper ">
+                                <h4>[牌子]阿斯 是阿斯蒂芬是阿斯 是阿斯蒂芬是阿斯 是阿斯蒂芬是阿斯 是阿斯蒂芬是</h4>
+                                <p class="specifications">库存：57件&nbsp;利润：￥20.00/件</p>
+                            <div class="price">
+                                <p>售价</p>
+                                <p class="money">￥300.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>  
+
+        <style type="text/css">
+            .status_manage_list  { background: white;}
+            .status_manage_list .more{font-size: 14px;line-height: 15px}
+            .status_manage_list .more span {margin-right: 13px;font-size: 12px;}     
+            .status_manage_list ul {padding-bottom:5px; }
+            .status_manage_list ul li {width: 100%;height: 110px;border-top: 1px solid #eee;  }
+            .status_manage_list li:nth-last-child(2) {border-bottom: 1px solid #eee;}
+            .status_manage_list ul li .img {width: 31%;height: 110px;border-right: 1px solid #eee;}
+            .status_manage_list ul li a {width: 100%;height: 100%}
+            .status_manage_list ul li .img div { width: 94px;height: 94px;margin:10px  auto;}
+            .status_manage_list ul li .img div img {width: 100%;height: 100%}
+            .status_manage_list ul li .warpper {width: 62%;height: 110px;margin-left: 10px }
+            .status_manage_list ul li .warpper  h4{margin-top: 7px;height: 40px;overflow: hidden;line-height: 20px}
+            .status_manage_list ul li .warpper  .text {font-size: 12px;color: #999;line-height: 17px;height: 34px;margin-top: 7px;overflow: hidden;}
+            .status_manage_list ul li .warpper .specifications {font-size: 14px;color: #777;line-height: 15px;margin-bottom:0 !important;margin-top: 14px;}
+            .status_manage_list ul li .warpper .price {height: 22px;width: 100%;margin-top: 10px;}
+            .status_manage_list ul li .warpper .price p {float: left;}
+            .status_manage_list ul li .warpper .price .money  {color: #ff5500;display: inline-block;font-size: 16px;margin-right: 20px;} 
+            .status_manage_list ul li .warpper .price span  { display: inline-block;font-size: 12px;color: #999} 
+            .status_manage_list ul li .warpper .price img {height: 22px;width: 22px;float: right;}
+            
+
+
+        </style>
+    <!-- 列表模板35 -->       
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板36 -->       
+        <div class="consultation">
+            <div class="wrap">
+                <a href="">
+                    <div class="center">
+                        <img src="img/wx.png">
+                        <span>自我诊疗</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="wrap">
+                <a href="">
+                    <div class="center">
+                        <img src="img/wx.png">
+                        <span>在线客服</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <style type="text/css">
+            .consultation {width: 100%;height: 40px;border-bottom: 1px solid #eee ;background: white}
+            .consultation .wrap {width: 49%;height: 100%;float: left;}
+            .consultation .wrap:nth-child(2n+1){border-right:1px solid #eee ; }
+            .consultation .wrap  a {width:100%;height: 100%}
+            .consultation .wrap .center {width: 100px;height: 20px; margin: 10px auto}
+            .consultation .wrap .center img {width: 23px;height: 23px;}
+            .consultation .wrap .center span {position: relative; left: 5px;font-size: 14px}
+            
+        </style>
+
+    <!-- 列表模板36 -->       
+    <br><br><br><br><br><br><br><br><br>    
+
+
+    <!-- 列表模板37 --> 
+
+        <div class="card1">
+            <div class="card1-header card1-media"  >
+                <img src="img/cbd.jpg">
+
+
+            </div>
+            <div class="card1-content">
+                <div class="card1-content-inner">
+                    <p>Posted on January 18, 2016</p>
+                    <p style="color: #333;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+                </div>
+            </div>
+            <div class="card1-footer">
+                <a class="card1-link">Like</a>
+                <a class="card1-link">Read more</a>
+            </div>
+        </div>
+
+
+        <style type="text/css">
+            .card1 {font-size:14px;position:relative;overflow:hidden;margin:10px;border-radius:6px;background-color:#fff;background-clip:padding-box;box-shadow:0 1px 2px rgba(0,0,0,.3);}
+            .card1-media {display:block;/*padding:10px;*/height:auto;padding: 0 !important}
+            .card1-header img {width: 100%;;height: auto}
+            .card1-header:after {top:auto;bottom:0;}
+            .card1-footer:before,.card1-header:after {position:absolute;top:0;right:0;left:0;height:1px;content:'';-webkit-transform:scaleY(.5);transform:scaleY(.5);background-color:#c8c7cc;}
+            .card1-content {font-size:14px;position:relative;}
+            .card1-content-inner {position:relative;padding:15px;}
+            .card1-content {font-size:14px;position:relative;}
+            .card1-footer {color:#6d6d72;border-radius:0 0 2px 2px;}
+            .card1-footer,.card1-header {position:relative;display:flex;/*min-height:44px;*/padding:10px 15px;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center;}
+            .card1-footer .card1-link {line-height:44px;position:relative;display:flex;height:44px;margin-top:-10px;margin-bottom:-10px;transition-duration:.3s;text-decoration:none;-webkit-box-pack:start;justify-content:flex-start;-webkit-box-align:center;align-items:center;}
+
+
+        </style>
+
+    <!-- 列表模板37 -->    
+
+    <br><br><br><br><br><br><br><br><br>    
+    <!-- 列表模板38 -->    
+        <div class="card2">
+            <div class="card2-header card2-media">
+                <img src="img/cbd.jpg">
+                <div class="mui-media-body">
+                    小M
+                    <p>发表于 2016-06-30 15:30</p>
+                </div>
+              
+            </div>
+            <div class="card2-content">
+               
+                <img src="img/cbd.jpg" width="100%">
+            </div>
+            <div class="card2-footer">
+                <a class="card2-link">Like</a>
+                <a class="card2-link">Comment</a>
+                <a class="card2-link">Read more</a>
+            </div>
+        </div>  
+
+        <style type="text/css">
+            .card2 {font-size:14px;position:relative;overflow:hidden;margin:10px;border-radius:6px;background-color:#fff;background-clip:padding-box;box-shadow:0 1px 2px rgba(0,0,0,.3);}
+            .card2-header {font-size:17px;border-radius:2px 2px 0 0;}
+            .card2-header>img:first-child {font-size:0;line-height:0;float:left;width:34px;height:34px;}
+            .card2-header.card2-media {display:block;padding:10px;}
+            .card2-media {vertical-align:bottom;color:#fff;background-position:center;background-size:cover;}
+            .card2-header.card2-media .mui-media-body {font-size:14px;font-weight:500;line-height:17px;margin-bottom:0;margin-left:44px;color:#333;}
+            .card2-header.card2-media .mui-media-body p {font-size:13px;margin-bottom:0;}
+            .card2-header:after {top:auto;bottom:0;}
+            .card2-footer,.card2-header {position:relative;display:-webkit-box;display:-webkit-flex;display:flex;min-height:44px;padding:10px 15px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
+            .card2-footer:before,.card2-header:after {position:absolute;top:0;right:0;left:0;height:1px;content:'';-webkit-transform:scaleY(.5);transform:scaleY(.5);background-color:#c8c7cc;}
+            .card2-content {font-size:14px;position:relative;padding-bottom: 5px;}
+            .card2-footer {color:#6d6d72;border-radius:0 0 2px 2px;box-sizing: border-box;}
+            .card2-footer,.card2-header {position:relative;display:-webkit-box;display:-webkit-flex;display:flex;min-height:44px;padding:10px 15px;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
+            .card2-footer:before,.card2-header:after {position:absolute;top:0;right:0;left:0;height:1px;content:'';-webkit-transform:scaleY(.5);transform:scaleY(.5);background-color:#c8c7cc;}
+            .card2-footer .card2-link,.card2-header .card2-link {line-height:44px;position:relative;display:-webkit-box;display:-webkit-flex;display:flex;height:44px;margin-top:-10px;margin-bottom:-10px;-webkit-transition-duration:.3s;transition-duration:.3s;text-decoration:none;-webkit-box-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;align-items:center;}
+
+        </style>
+
+    <!-- 列表模板38 -->       
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板39 -->    
+        
+        <ul class="end">
+            <li>
+                <a  class=""  href=" ">登录</a>
+            </li>
+            
+            <li>
+                <a  class=""  href=" ">注册</a>
+            </li>
+            
+            <li>
+                <a  class=""  href=" ">反馈</a>
+            </li>
+            
+            <li>
+                <a class=""  href=" " onclick="window.scrollTo(0,0);">回到顶部</a>
+            </li>
+        </ul> 
+
+        <style type="text/css">
+            .end {width: 90%;margin: 0 auto;display:-webkit-box;background: white;}
+            .end li {-webkit-box-flex:1;height: 20px;text-align: center;border-left: 1px solid  #666;font-size: 14px;line-height: 20px;}
+            .end li:first-child {border:none}
+
+        </style>   
+
+    <!-- 列表模板39 -->   
+    <br><br><br><br><br><br><br><br><br>    
+
+
+    <!-- 列表模板40-->   
+
+        <div class="entrance">
+            <ul class="clear">
+                <li>
+                    <a href="">
+
+                        <div>
+                            <img src="img/sj.png">
+                            <span>康采商城</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="img/sj.png">
+                            <span>商家中心</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="img/sj.png">
+                            <span>预约体检</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="img/sj.png">
+                            <span>健康咨询</span>
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="img/sj.png">
+                            <span>我的财富</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div>
+                            <img src="img/sj.png">
+                            <span>个人中心</span>
+                        </div>
+                    </a>
+                </li>           
+                <div class="clear"></div>
+
+            </ul>
+        </div>
+
+        <style type="text/css">
+            .entrance {width: 100%;height: auto;margin-top: 10px;/*border-top: 1px  solid #eee*/;background: white}
+            .entrance ul {width: 100%;height: auto;}
+            .entrance ul li  {width: 50%;height: 120px;float: left;border-bottom: 1px  solid #eee;box-sizing: border-box; }
+            .entrance ul li:nth-child(2n+1){border-right: 1px  solid #eee}
+            .entrance ul li   a {width: 100%;height: 150px;}
+            .entrance ul li  div{width:71px;height: 90px;margin: 15px  auto;}
+            .entrance ul li  div img {width:61px;margin-left: 5px;  }
+            .entrance ul li  div span {text-align: center;color: #666;    display: block;width: 100%;    margin-top: 11px;}
+            
+        </style>
+
+    <!-- 列表模板40-->   
+
+    <br><br><br><br><br><br><br><br><br>    
+
+    <!-- 列表模板41-->   
+        <ul class="addr_list">
+            <li>
+                <div class="addr_list_details clear">
+                    <div class="name">
+                        <span>是事实</span>
+                        <p>12345678910</p>
+                    </div>
+                    <div class="add_details">
+                        <p> 阿萨德积分卡的交罚款的房啊啊啊啊间啊啊啊啊</p>
+                    </div>
+
+                    <div class="handle">
+                        <section class="mui-input-row mui-radio mui-left">
+                            <label>默认地址</label>
+                            <input name="radio1" type="radio">
+                        </section>
+                        <a class="del" href="">删除</a>
+                        <a class="edit" href="">编辑</a>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+                <div class="addr_list_details clear">
+                    <div class="name">
+                        <span>是事实</span>
+                        <p>12345678910</p>
+                    </div>
+                    <div class="add_details">
+                        <p> 阿萨德积分卡的交罚款的房啊啊啊啊间啊啊啊啊</p>
+                    </div>
+
+                    <div class="handle">
+                        <section class="mui-input-row mui-radio mui-left">
+                            <label>默认地址</label>
+                            <input name="radio1" type="radio">
+                        </section>
+                        <a class="del" href="">删除</a>
+                        <a class="edit" href="">编辑</a>
+                    </div>
+                </div>
+
+            </li>
+ 
+        </ul>   
+
+
+        <style type="text/css">
+            .addr_list li {background: white;}
+
+            .addr_list li .addr_list_details {width: 100%;margin-bottom: 5px;}
+            .addr_list li .addr_list_details div {width: 90%;margin: 0 auto;height: 25px;line-height: 25px;}
+            .addr_list li .addr_list_details .name {margin-top: 3px;}
+            .addr_list li .addr_list_details .name span  {display: inline-block;float: left;color: #333}
+            .addr_list li .addr_list_details .name p {display: inline-block;float: right;color: #666}       
+            .addr_list li .addr_list_details .add_details {color: #666;border-bottom: 1px solid #eee;/*margin-top: -13px;*/}
+            .addr_list li .addr_list_details .add_details p{  width: 100%;height: 100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;/*margin-bottom: 0 !important*/;/*position: relative;top:-10px;*/}
+            .addr_list li .addr_list_details .handle {margin-top: 3px;}
+            .addr_list li .addr_list_details .handle section { width: 50%;float: left;font-size: 14px;}
+            .addr_list li .addr_list_details .handle section label {font-size: 14px;}
+            .addr_list li .addr_list_details .handle .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{font-size: 16px;}
+            .addr_list li .addr_list_details .handle .mui-radio.mui-left input[type=radio]{left: 0 !important}
+            .addr_list li .addr_list_details .handle .mui-radio.mui-left label {/*padding-right: 15px;padding-left: 23px;*/}
+            .addr_list li .addr_list_details .handle .mui-input-row label {/*padding: 4px 15px;*/}
+            .addr_list li .addr_list_details .handle .mui-radio input[type=radio]{ top:0px;}
+            .addr_list li .addr_list_details .handle span {float: left;margin-left: 21px;font-size: 12px}
+            .addr_list li .addr_list_details .handle a {float: right;margin-left: 21px;font-size: 12px}
+            .addr_list li .addr_list_details .handle .mui-checkbox input[type=checkbox]:checked:before, .addr_list  ul li .addr_list_details .handle .mui-radio input[type=radio]:checked:before {
+            color: #ff5500;}
+            .addr_list li .addr_list_details .handle  .mui-checkbox input[type=checkbox]:before,.addr_list  ul li .addr_list_details .handle  .mui-radio input[type=radio]:before {color: #ff5500;}
+            .addr_list li  .mui-navigate-right:after {font-size: 30px;font-weight: 600;left: 12px; color: #007aff;top: 66px;}
+            
+
+
+        </style>
+    <!-- 列表模板41-->   
+    <br><br><br><br><br><br><br><br><br>   
+    <!-- 列表模板42-->   
+        <div class="title_more  ">
+            <a class="">
+                <h3>热销商品</h3> 
+                <span class="fr col999">更多</span>
+            </a>
+        </div>
+
+
+        <style type="text/css">
+            .title_more {position:relative;overflow:hidden;padding:11px 15px;-webkit-touch-callout:none; background: white;font-size:14px;line-height:15px;}
+            .title_more>a {position:relative;display:block;overflow:hidden;margin:-11px -15px;padding:inherit;white-space:nowrap;text-overflow:ellipsis;color:inherit;}
+            .title_more h3 {    display: inline-block;width: auto;}    
+            .title_more span {margin-right:13px;font-size:12px;}
+            .col999 {color:#999 !important;}
+            .fr {float:right;}
+        </style>
+    <!-- 列表模板42-->   
+
+    <br><br><br><br><br><br><br><br><br>   
+
+
+    <!-- 列表模板43--> 
+        <div class="updatephoto">
+            <input hidden="" type="file" id="qrcode1" name="qrcode" onchange="previewImage(this,'1')">
+            <div id="preview1" class="update" haveimg="1">
+                <img id="Display_qr1" onclick="click_file('1')" src="./img/index/zx.png" width="100" height="40">
+            </div>
+
+            <input hidden="" type="file" id="qrcode2" name="qrcode" onchange="previewImage(this,'2')">
+            <div id="preview2" class="update" haveimg="1">
+                <img id="Display_qr2" onclick="click_file('2')" src="" width="100" height="40">
+            </div>
+
+            <input hidden="" type="file" id="qrcode3" name="qrcode" onchange="previewImage(this,'3')">
+            <div id="preview3" class="update" haveimg="1">
+                <img id="Display_qr3" onclick="click_file('3')" src="" width="100" height="40">
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript">
+
+
+        </script>
+
+
+        <style type="text/css">
+
+        </style>
+
+        
+    <!-- 列表模板43-->    
+
+
+    
+</body>
+</html>
